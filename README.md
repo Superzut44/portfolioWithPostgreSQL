@@ -2,6 +2,21 @@
 
 ## Getting Started for Students
 
+## Versions
+
+1. php -v // 8.1.3
+2. composer --version // 2.2.7
+3. symfony -v // 5.4.2
+4. node -v // 16.14.0
+5. nvm -v // 0.39.1
+6. yarn --version // 1.22.17
+7. npm -v // 8.5.1
+8. lsb_release -a // Ubuntu 20.04.4 LTS
+9. npm list react // react-dom@17.0.2 and react-router-dom@6.2.2
+10. npm view react-script version // 2.0.5
+11. npm view react-native version // 0.67.4
+12. sudo mysql // Server version: 8.0.28-0ubuntu0.20.04.3 (Ubuntu)
+
 ### Prerequisites
 
 1. Check composer is installed
@@ -35,3 +50,6 @@
 If you develop on Windows, you should edit you git configuration to change your end of line rules with this command :
 
 `git config --global core.autocrlf true`
+
+
+
