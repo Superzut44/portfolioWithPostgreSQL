@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
+import Presentation from './Presentation';
     
 class Home extends Component {
     
     render() {
         return (
            <>
-               <h1>Début du projet Portfolio</h1>
+               <Presentation />
            </>
         )
     }
