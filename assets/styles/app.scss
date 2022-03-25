@@ -1,10 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: lightgray!important;
 }
 
-.presentation img{
-    width: 100%;
-    height: auto;
+.presentation {
+    background-size: cover;
+}
+
+.presentation-page {
+    height: 100vh;
 }
 
 @media screen and (min-width: 800px) {

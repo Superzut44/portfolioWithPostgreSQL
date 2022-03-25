@@ -1,24 +1,31 @@
 import React, {Component} from 'react';
 // https://create-react-app.dev/docs/adding-images-fonts-and-files/
 // https://pixabay.com/
-import image from '../../images/digital2.jpg';
+import desktop from '../../images/desktop.jpg';
+import mobile from '../../images/mobile.jpg';
 
 // npm install react-bootstrap bootstrap@5.1.3
 // composer install && composer update
 import { } from 'react-bootstrap';
 
+import { useMediaQuery } from 'react-responsive'
+
     
-console.log(image); // /logo.84287d09.png
+// console.log(mobile); // /logo.84287d09.png
 
 function Presentation() {
-  // Import result is the URL of your image
-  return (
-    <div className="presentation" style={{ 
-        backgroundImage: {image}
-      }}>
-        <img src={image} alt="digital world"/>
-    </div>
-  )
+
+    const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+  
+    return (
+        <div className="presentation" style={{
+            backgroundImage: `url(${!isPortrait ? desktop : mobile})`
+        }}>
+            <div className='presentation-page'>
+                {/* <img src={mobile} alt="digital world"/> */}
+            </div>
+        </div>
+    )
 
 }
 
