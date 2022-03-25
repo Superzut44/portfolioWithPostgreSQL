@@ -23,6 +23,8 @@ function Presentation() {
         }}>
             <div className='presentation-page'>
                 {/* <img src={mobile} alt="digital world"/> */}
+                <h1>Xavier Chavaudrey</h1>
+                <h3>Développeur Web Full-Stack</h3>
             </div>
         </div>
     )
