@@ -1,4 +1,2 @@
 #!/bin/sh
 npm run build
-rsync -av ./ rhis0922@chavaudreyxavier.fr:~/portfolio --include=public/build --include=vendor --exclude-from=.gitignore --exclude=".*"
-ssh rhis0922@chavaudreyxavier.fr 'cd ~/portfolio && php bin/console cache:clear'
