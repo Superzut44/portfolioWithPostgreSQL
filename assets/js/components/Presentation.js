@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 // https://create-react-app.dev/docs/adding-images-fonts-and-files/
 // https://pixabay.com/
 import desktop from '../../images/desktop.jpg';
