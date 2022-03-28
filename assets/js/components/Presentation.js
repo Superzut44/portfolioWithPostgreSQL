@@ -21,10 +21,11 @@ function Presentation() {
         <div className="presentation" style={{
             backgroundImage: `url(${!isPortrait ? desktop : mobile})`
         }}>
-            <div className='presentation-page'>
+            <div className={`presentation-page ${!isPortrait ? "presentation-classdesktop" : "presentation-classmobile"}`}>
                 {/* <img src={mobile} alt="digital world"/> */}
-                <h1>Xavier Chavaudrey</h1>
-                <h3>Développeur Web Full-Stack</h3>
+                {isPortrait ? 
+                <div><h1>Xavier</h1><h2>Chavaudrey</h2><h3>Développeur Web</h3><h3>Full-Stack</h3></div> :
+                <div><h1>Xavier Chavaudrey</h1><h3>Développeur Web Full-Stack</h3></div>}
             </div>
         </div>
     )
