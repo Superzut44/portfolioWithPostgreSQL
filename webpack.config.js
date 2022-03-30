@@ -34,6 +34,8 @@ Encore
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
+    .addEntry('appNavbar', './assets/js/appNavbar.js')
+    .addEntry('appPresentation', './assets/js/appPresentation.js')
     
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()

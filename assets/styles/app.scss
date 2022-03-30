@@ -23,9 +23,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 20rem;
     h1, h2{
-        font-size: 5rem;
+        font-size: 4rem;
     }
     h3{
         font-size: 2rem;
@@ -36,27 +35,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    transform: rotate(-30deg);
+    align-items: center;
     padding-top: 6rem;
     h1, h2{
-        padding-left: 6rem;
+        
         font-size: 2rem;
     }
     h3{
-        margin-top: 2rem;
-        padding-left: 8rem;
+        margin-top: 1rem;
         font-size: 1.2rem;
     }
-    h2{
-        padding-left: 6.5rem;
-    }
     h3:nth-of-type(2){
-        padding-left: 8.5rem;
         margin-top: 0;
     }
 }
-    
 
 // presentation page end
 
@@ -68,7 +60,7 @@ body {
     width: 100vw!important;
 }
 
-.home-nav-bar-classdesktop{
+.homenavbar-classdesktop{
     background-color: #ebebeb;
     span{
         font-size: 2.5rem!important;
@@ -79,10 +71,10 @@ body {
     }
 }
 
-.home-nav-bar-classmobile{
+.homenavbar-classmobile{
     background-color: #fcf0da;
     span{
-        font-size: 1.75rem!important;
+        font-size: 1.25rem!important;
     }
     a {
         font-size: 2rem;

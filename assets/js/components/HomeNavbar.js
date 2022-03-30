@@ -1,20 +1,18 @@
 import React from 'react';
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
-import Presentation from './Presentation';
 // import {
 //     Link,
 // } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive'
     
-export default function Home() {
+export default function HomeNavbar() {
     const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
         
         return (
-            <div>
-                <Presentation />
+            <>
                 <Navbar 
                     bg="ligth" 
-                    className={`home-nav-bar ${!isPortrait ? "home-nav-bar-classdesktop" : "home-nav-bar-classmobile"}`} 
+                    className={`homenavbar ${!isPortrait ? "homenavbar-classdesktop" : "homenavbar-classmobile"}`} 
                     expand={`${isPortrait ? "xxl" : "sm"}`}
                     >
                     <Container>
@@ -36,7 +34,7 @@ export default function Home() {
                     </Container>
                 </Navbar>
                 
-            </div>
+            </>
         )
 }
 
