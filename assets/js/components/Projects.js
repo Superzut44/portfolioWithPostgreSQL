@@ -2,7 +2,7 @@ import React from 'react';
 // https://create-react-app.dev/docs/adding-images-fonts-and-files/
 // https://pixabay.com/
 import desktop from '../../images/marbre.jpg';
-import mobile from '../../images/planche.jpg';
+import mobile from '../../images/planche3.jpg';
 
 // npm install react-bootstrap bootstrap@5.1.3
 // composer install && composer update
