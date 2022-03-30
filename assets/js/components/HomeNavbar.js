@@ -1,8 +1,8 @@
 import React from 'react';
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
-// import {
-//     Link,
-// } from 'react-router-dom';
+import {
+    Link,
+} from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive'
     
 export default function HomeNavbar() {
@@ -20,8 +20,8 @@ export default function HomeNavbar() {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" className="essai2"/>
                         <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto ">
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href={"/project"}>Project</Nav.Link>
+                            <Nav.Link href={"/presentation"}>Accueil</Nav.Link>
+                            <Nav.Link href={"/projects"}>Projets</Nav.Link>
                             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>

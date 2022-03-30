@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from "react-router-dom";
-import Presentation from './components/Presentation';
+import HomeNavbar from './components/HomeNavbar';
+import Roads from './Roads';
 
-ReactDOM.render(<BrowserRouter><Presentation /></BrowserRouter>, document.getElementById('rootPresentation'));
+ReactDOM.render(<BrowserRouter><HomeNavbar /><Roads /></BrowserRouter>, document.getElementById('rootPresentation'));
