@@ -91,10 +91,7 @@ body{
 
 .projects{
     background-size: cover;
-}
-
-.projects-page{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .projects-classdesktop{
@@ -113,5 +110,14 @@ body{
     padding-top: 6rem;
     h1, h2{
         font-size: 2.5rem;
+    }
+}
+
+.projects-cards{
+    li{
+        width: auto;
+        .projects-card{
+            margin: 1rem auto;
+        }
     }
 }
