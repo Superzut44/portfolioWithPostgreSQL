@@ -4,21 +4,21 @@
     box-sizing: border-box;
 }
 
-body {
+body{
     background-color: lightgray!important;
 }
 
 // presentation page start
 
-.presentation {
+.presentation{
     background-size: cover;
 }
 
-.presentation-page {
+.presentation-page{
     height: 100vh;
 }
 
-.presentation-classdesktop {
+.presentation-classdesktop{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,14 +31,13 @@ body {
     }
 }
 
-.presentation-classmobile {
+.presentation-classmobile{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 6rem;
     h1, h2{
-        
         font-size: 2rem;
     }
     h3{
@@ -85,9 +84,34 @@ body {
     margin-left: 0!important;
 }
 
-// nav-bar end #d2c6ac #f6e8cc
+// nav-bar end
 
 
-@media screen and (min-width: 800px) {
-    
-  }
+// projects start
+
+.projects{
+    background-size: cover;
+}
+
+.projects-page{
+    height: 100vh;
+}
+
+.projects-classdesktop{
+    text-align: center;
+    padding-top: 10rem;
+    h1{
+        font-size: 3rem;
+    }
+}
+
+.projects-classmobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 6rem;
+    h1, h2{
+        font-size: 2.5rem;
+    }
+}

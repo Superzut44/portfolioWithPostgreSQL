@@ -2,8 +2,8 @@ import React, { useState } from "react";
 // https://create-react-app.dev/docs/adding-images-fonts-and-files/
 // https://pixabay.com/
 import desktop from '../../images/marbre.jpg';
-import mobile from '../../images/planche3.jpg';
-import imgcard from '../../images/538x160_2.jpg'
+import mobile from '../../images/planche.jpg';
+import imgcard from '../../images/538x160_2.jpg'; //mettre image moins lourde
 
 // npm install react-bootstrap bootstrap@5.1.3
 // composer install && composer update
@@ -21,14 +21,14 @@ export default function Projects() {
     const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
   
     return (
-        <div className="presentation" style={{
+        <div className="projects" style={{
             backgroundImage: `url(${!isPortrait ? desktop : mobile})`
         }}>
-            <div className={`presentation-page ${!isPortrait ? "presentation-classdesktop" : "presentation-classmobile"}`}>
+            <div className={`projects-page ${!isPortrait ? "projects-classdesktop" : "projects-classmobile"}`}>
                 {/* <img src={mobile} alt="digital world"/> */}
                 {isPortrait ? 
-                <><h1>mobile</h1></> :
-                <><h1>desktop</h1></>}
+                <><h1>Mes projets</h1><h2>réalisés</h2></> :
+                <><h1>Mes projets réalisés</h1></>}
             </div>
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={ imgcard } />
