@@ -28,7 +28,7 @@ export default function Projects() {
             </div>
             <ul className="projects-cards">
                 <li>
-                    <Card className="projects-card" style={{ width: '18rem' }}>
+                    <Card className="projects-card" style={{ width: '20rem' }}>
                         <Card.Img variant="top" src={ imgcard } />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
@@ -36,12 +36,25 @@ export default function Projects() {
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+                            <Button variant="primary">Lien</Button>
+                            <a href="https://www.cprogramming.com/" target="_blank">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="c" width="30" height="30"/>
+                            </a>
                         </Card.Body>
+                        <Card.Footer>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="js" width="30" height="30"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="php" width="30" height="30"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="bootstrap" width="30" height="30" />
+                        </Card.Footer>
+                        <Card.Footer>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="js" width="30" height="30"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="php" width="30" height="30"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="bootstrap" width="30" height="30" />
+                        </Card.Footer>
                     </Card>
                 </li>
                 <li>
-                    <Card className="projects-card" style={{ width: '18rem' }}>
+                    <Card className="projects-card" style={{ width: '20rem' }}>
                         <Card.Img variant="top" src={ imgcard } />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
@@ -49,21 +62,25 @@ export default function Projects() {
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+                            <Button variant="primary">Lien</Button>
+                            <a href="https://www.cprogramming.com/" target="_blank">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="c" width="30" height="30"/>
+                            </a>
                         </Card.Body>
-                    </Card>
-                </li>
-                <li>
-                    <Card className="projects-card" style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={ imgcard } />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
+                        <Card.Footer>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="c" width="30" height="30"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="c" width="30" height="30"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="c" width="30" height="30" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="c" width="30" height="30"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="c" width="30" height="30"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="c" width="30" height="30" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="c" width="30" height="30"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="c" width="30" height="30"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="c" width="30" height="30" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="c" width="30" height="30"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="c" width="30" height="30"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="c" width="30" height="30" />
+                        </Card.Footer>
                     </Card>
                 </li>
             </ul>
