@@ -1,3 +1,5 @@
+@import 'variables';
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +8,7 @@
 
 body{
     background-color: lightgray!important;
+    font-family: $fontworksans;
 }
 
 // presentation page start
@@ -16,6 +19,7 @@ body{
 
 .presentation-page{
     height: 100vh;
+    color: #81a3a7;
 }
 
 .presentation-classdesktop{
@@ -24,6 +28,8 @@ body{
     justify-content: center;
     align-items: center;
     h1, h2{
+        text-shadow: -1px 0 #272424, 0 1px #272424,
+            1px 0 #272424, 0 -1px #272424;
         font-size: 4rem;
     }
     h3{
@@ -37,7 +43,9 @@ body{
     justify-content: center;
     align-items: center;
     padding-top: 6rem;
+    color: #585a56;
     h1, h2{
+        font-weight: bold;
         font-size: 2rem;
     }
     h3{
@@ -60,22 +68,26 @@ body{
 }
 
 .homenavbar-classdesktop{
-    background-color: #ebebeb;
+    background-color: #81a3a7;
     span{
+        color: #272424!important;
         font-size: 2.5rem!important;
         padding-right: 2rem!important;
     }
     a {
+        color: #f1f3f2!important;
         font-size: 2rem;
     }
 }
 
 .homenavbar-classmobile{
-    background-color: #fcf0da;
+    background-color: #81a3a7;
     span{
-        font-size: 1.25rem!important;
+        color: #272424!important;
+        font-size: 1.5rem!important;
     }
     a {
+        color: #f1f3f2!important;
         font-size: 2rem;
     }
 }
@@ -84,14 +96,27 @@ body{
     margin-left: 0!important;
 }
 
+.navbar-toggler{
+    border-color: #f1f3f2!important;
+}
+
+.navbar-toggler-icon{
+    color: #f1f3f2!important;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(241, 243, 242, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")!important;
+}
+
 // nav-bar end
 
 
 // projects start
 
 .projects{
-    background-size: cover;
+    background-color:  #f1f2f3;
     min-height: 100vh;
+    font-family: $fontbodini;
 }
 
 .projects-classdesktop{

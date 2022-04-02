@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 // https://create-react-app.dev/docs/adding-images-fonts-and-files/
 // https://pixabay.com/
-import desktop from '../../images/marbre.jpg';
-import mobile from '../../images/planche.jpg';
-import imgcard from '../../images/538x160_2.jpg'; //mettre image moins lourde
+import imgcard from '../../images/538x160_2.jpg';
 
 // npm install react-bootstrap bootstrap@5.1.3
 // composer install && composer update
@@ -21,9 +19,7 @@ export default function Projects() {
     const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
   
     return (
-        <div className="projects" style={{
-            backgroundImage: `url(${!isPortrait ? desktop : mobile})`
-        }}>
+        <div className="projects">
             <div className={`projects-page ${!isPortrait ? "projects-classdesktop" : "projects-classmobile"}`}>
                 {/* <img src={mobile} alt="digital world"/> */}
                 {isPortrait ? 
