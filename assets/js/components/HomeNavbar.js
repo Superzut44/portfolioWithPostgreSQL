@@ -1,8 +1,6 @@
 import React from 'react';
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
-import {
-    Link,
-} from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive'
     
 export default function HomeNavbar() {
