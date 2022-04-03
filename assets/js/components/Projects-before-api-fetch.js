@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 // https://create-react-app.dev/docs/adding-images-fonts-and-files/
 // https://pixabay.com/
 import imgcard from '../../images/538x160_2.jpg';
@@ -11,23 +11,12 @@ import { useMediaQuery } from 'react-responsive'
 
 import { Card, Button } from 'react-bootstrap';
 
-import axios from "axios";
-
-
+    
 // console.log(mobile); // /logo.84287d09.png
 
 export default function Projects() {
 
     const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
-    const [projects, setProjects] = useState([]);
-
-    useEffect(() => {
-        axios
-        .get(`api/projects/test`)
-        .then((resp) => {
-            setProjects(resp.data);
-        });
-    }, []);
   
     return (
         <div className="projects">
@@ -37,7 +26,6 @@ export default function Projects() {
                 <><h1>Mes projets</h1><h2>réalisés</h2></> :
                 <><h1>Mes projets réalisés</h1></>}
             </div>
-            <span>{ console.log(projects) }</span>
             <ul className="projects-cards">
                 <li>
                     <Card className="projects-card" style={{ width: '20rem' }}>
