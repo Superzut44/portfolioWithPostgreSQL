@@ -9,7 +9,7 @@ import { } from 'react-bootstrap';
 
 import { useMediaQuery } from 'react-responsive'
 
-import { Card, Button } from 'react-bootstrap';
+import { Card, Row, Col, Button } from 'react-bootstrap';
 
 import axios from "axios";
 
@@ -31,72 +31,27 @@ export default function Projects() {
   
     return (
         <div className="projects">
-            <div className={`projects-page ${!isPortrait ? "projects-classdesktop" : "projects-classmobile"}`}>
+            <div className={`projects-page ${!isPortrait ? "projects-page-classdesktop" : "projects-page-classmobile"}`}>
                 {/* <img src={mobile} alt="digital world"/> */}
                 {isPortrait ? 
                 <><h1>Mes projets</h1><h2>réalisés</h2></> :
                 <><h1>Mes projets réalisés</h1></>}
             </div>
-            <span>{ console.log(projects) }</span>
-            <ul className="projects-cards">
-                <li>
-                    <Card className="projects-card" style={{ width: '20rem' }}>
-                        <Card.Img variant="top" src={ imgcard } />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Lien</Button>
-                            <a href="https://www.cprogramming.com/" target="_blank">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="c" width="30" height="30"/>
-                            </a>
-                        </Card.Body>
-                        <Card.Footer>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="js" width="30" height="30"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="php" width="30" height="30"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="bootstrap" width="30" height="30" />
-                        </Card.Footer>
-                        <Card.Footer>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="js" width="30" height="30"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="php" width="30" height="30"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="bootstrap" width="30" height="30" />
-                        </Card.Footer>
-                    </Card>
-                </li>
-                <li>
-                    <Card className="projects-card" style={{ width: '20rem' }}>
-                        <Card.Img variant="top" src={ imgcard } />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Lien</Button>
-                            <a href="https://www.cprogramming.com/" target="_blank">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="c" width="30" height="30"/>
-                            </a>
-                        </Card.Body>
-                        <Card.Footer>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="c" width="30" height="30"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="c" width="30" height="30"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="c" width="30" height="30" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="c" width="30" height="30"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="c" width="30" height="30"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="c" width="30" height="30" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="c" width="30" height="30"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="c" width="30" height="30"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="c" width="30" height="30" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="c" width="30" height="30"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="c" width="30" height="30"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="c" width="30" height="30" />
-                        </Card.Footer>
-                    </Card>
-                </li>
-            </ul>
+            <div className="wrapper">
+                    <div className="cards_wrap">
+                    {projects.map((project, idx) => (
+                        <div key={idx} className="card_item">
+                            <div className="card_inner">
+                                <img src={ imgcard } style={{ width: "10rem"}} alt="image"/>
+                                <div className="role_name">{project.name}</div>
+                                <div className="real_name">Chadwick Boseman</div>
+                                <div className="film">{project.description}</div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
         </div>
+       
     )
-
 }

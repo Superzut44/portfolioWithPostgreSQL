@@ -65,7 +65,7 @@ body{
 .navbar{
     position: absolute!important;
     top: 0!important;
-    width: 100vw!important;
+    width: 100%!important;
 }
 
 .homenavbar button:focus{
@@ -98,7 +98,7 @@ body{
 }
 
 .container{
-    margin-left: 0!important;
+    margin-right: 1rem!important;
 }
 
 .navbar-toggler{
@@ -124,7 +124,7 @@ body{
     font-family: $fontbodini;
 }
 
-.projects-classdesktop{
+.projects-page-classdesktop{
     text-align: center;
     padding-top: 8rem;
     h1{
@@ -132,7 +132,7 @@ body{
     }
 }
 
-.projects-classmobile{
+.projects-page-classmobile{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,13 +144,89 @@ body{
 }
 
 .projects-cards{
-    li{
-        margin: 1rem 0;
-        border: 1px solid red;
-        .projects-card{
-            margin-left: auto;
-            margin-right: auto;
-            
-        }
-    }
+    border: 1px solid green!important;
+    margin: 5rem auto;
+    width: 90%!important;
+    list-style: none;
+}
+
+// cards
+
+.cards_wrap{
+	padding: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.cards_wrap .card_item{
+	padding: 15px 25px;
+	width: 25%;
+}
+
+.cards_wrap .card_inner{
+	background: $color-cream;
+    border: 2px solid $color-anthracite;
+	border-radius: 5px;
+	padding: 35px 20px;
+	min-width: 225px;
+	min-height: 315px;
+	max-height: 370px;
+	width: 100%;
+}
+
+.cards_wrap .card_item img{
+	width: 80px;
+	height: 80px;
+	margin-bottom: 5px;
+}
+
+.cards_wrap .card_item .role_name{
+	color: $color-olive;
+	font-weight: 900;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 20px;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cards_wrap .card_item .real_name{
+	color: #b6c0c2;
+	font-size: 12px;
+	font-weight: 100;
+	margin: 5px 0 10px;
+}
+
+.cards_wrap .card_item .film{
+	font-size: 14px;
+	line-height: 24px;
+	color: #7b8ca0;
+}
+
+@media screen and (max-width: 1024px){
+	.cards_wrap .card_item{
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.cards_wrap .card_item{
+		width: 50%;
+	}
+	.wrapper .header{
+		font-size: 16px;
+		height: 60px;
+	}
+}
+
+@media screen and (max-width: 568px){
+	.cards_wrap .card_item{
+		width: 100%;
+	}
+	.wrapper .header{
+		font-size: 14px;
+	}
 }
