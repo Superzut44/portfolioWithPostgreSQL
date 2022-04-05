@@ -9,7 +9,7 @@ import { } from 'react-bootstrap';
 
 import { useMediaQuery } from 'react-responsive'
 
-import { Card, Row, Col, Button } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 
 import axios from "axios";
 
@@ -41,15 +41,12 @@ export default function Projects() {
                     <div className="cards_wrap">
                     {projects.map((project, idx) => (
                         <Card key={idx} style={{ width: "30rem"}} className="card_margin">
-                        <Card.Img variant="top" src={ imgcard } />
+                        <Card.Img variant="top" src={require('../../images/' + project.image)} style={{ height: "15rem"}} />
                         <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Lien</Button>
-                            <a href="https://www.cprogramming.com/" target="_blank">
+                            <Card.Title>{project.name}</Card.Title>
+                            <Card.Text>{project.description}</Card.Text>
+                            <Button href={project.link} className="card_button" >Lien vers le site</Button>
+                            <a href={project.github} target="_blank">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="c" width="30" height="30"/>
                             </a>
                         </Card.Body>
@@ -64,14 +61,6 @@ export default function Projects() {
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="bootstrap" width="30" height="30" />
                         </Card.Footer>
                     </Card>
-                        // <div key={idx} className="card_item">
-                        //     <div className="card_inner">
-                        //         <img src={ imgcard } style={{ width: "10rem"}} alt="image"/>
-                        //         <div className="role_name">{project.name}</div>
-                        //         <div className="real_name">Chadwick Boseman</div>
-                        //         <div className="film">{project.description}</div>
-                        //     </div>
-                        // </div>
                     ))}
                 </div>
             </div>
