@@ -241,6 +241,9 @@ body{
     background-color: $color-olive!important;
     border: 2px solid $color-olive!important;
     margin-right: 2rem;
+    img{
+        margin-left: 1rem;
+    }
 }
 
 .card-footer{

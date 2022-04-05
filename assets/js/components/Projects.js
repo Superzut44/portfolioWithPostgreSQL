@@ -45,7 +45,9 @@ export default function Projects() {
                         <Card.Body>
                             <Card.Title>{project.name}</Card.Title>
                             <Card.Text>{project.description}</Card.Text>
-                            <Button href={project.link} className="card_button" >Lien vers le site</Button>
+                            <Button href={project.link} className="card_button" >Link
+                                <img src={require('../../images/' + project.icon)} alt="c" width="30" height="30"/>
+                            </Button>
                             <a href={project.github} target="_blank">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="c" width="30" height="30"/>
                             </a>
