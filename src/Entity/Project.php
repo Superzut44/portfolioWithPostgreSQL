@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\ProjectRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: ProjectRepository::class)]
@@ -27,6 +29,18 @@ class Project
 
     #[ORM\Column(type: 'string', length: 255, nullable: true)]
     private $github;
+
+    #[ORM\ManyToMany(targetEntity: Language::class, mappedBy: 'projects')]
+    private $languages;
+
+    #[ORM\ManyToMany(targetEntity: Tool::class, mappedBy: 'projects')]
+    private $tools;
+
+    public function __construct()
+    {
+        $this->languages = new ArrayCollection();
+        $this->tools = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -89,6 +103,60 @@ class Project
     public function setGithub(?string $github): self
     {
         $this->github = $github;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Language>
+     */
+    public function getLanguages(): Collection
+    {
+        return $this->languages;
+    }
+
+    public function addLanguage(Language $language): self
+    {
+        if (!$this->languages->contains($language)) {
+            $this->languages[] = $language;
+            $language->addProject($this);
+        }
+
+        return $this;
+    }
+
+    public function removeLanguage(Language $language): self
+    {
+        if ($this->languages->removeElement($language)) {
+            $language->removeProject($this);
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Tool>
+     */
+    public function getTools(): Collection
+    {
+        return $this->tools;
+    }
+
+    public function addTool(Tool $tool): self
+    {
+        if (!$this->tools->contains($tool)) {
+            $this->tools[] = $tool;
+            $tool->addProject($this);
+        }
+
+        return $this;
+    }
+
+    public function removeTool(Tool $tool): self
+    {
+        if ($this->tools->removeElement($tool)) {
+            $tool->removeProject($this);
+        }
 
         return $this;
     }

@@ -19,7 +19,21 @@ class ProjectController extends AbstractController
                 'icon' => 'icon8-phone.png',
                 'image' => 'marcheconclu.png',
                 'link' => 'https://marcheconclu.chavaudreyxavier.fr',
-                'github' => 'https://github.com/Superzut44/marche-conclu'
+                'github' => 'https://github.com/Superzut44/marche-conclu',
+                'language' => [
+                    [
+                        'id' => 1,
+                        'name'=> 'html',
+                        'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg'
+                    ],
+                    [
+                        'id' => 2,
+                        'name'=> 'css',
+                        'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg'
+                    ],
+
+                ]
+
             ],
             [
                 'id' => 2,
