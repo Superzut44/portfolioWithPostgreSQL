@@ -25,9 +25,6 @@ class Project
     private $image;
 
     #[ORM\Column(type: 'string', length: 255, nullable: true)]
-    private $link;
-
-    #[ORM\Column(type: 'string', length: 255, nullable: true)]
     private $github;
 
     #[ORM\ManyToMany(targetEntity: Language::class, mappedBy: 'projects')]
@@ -35,6 +32,9 @@ class Project
 
     #[ORM\ManyToMany(targetEntity: Tool::class, mappedBy: 'projects')]
     private $tools;
+
+    #[ORM\ManyToOne(targetEntity: Screen::class, inversedBy: 'projects')]
+    private $screen;
 
     public function __construct()
     {
@@ -157,6 +157,18 @@ class Project
         if ($this->tools->removeElement($tool)) {
             $tool->removeProject($this);
         }
+
+        return $this;
+    }
+
+    public function getScreen(): ?Screen
+    {
+        return $this->screen;
+    }
+
+    public function setScreen(?Screen $screen): self
+    {
+        $this->screen = $screen;
 
         return $this;
     }
