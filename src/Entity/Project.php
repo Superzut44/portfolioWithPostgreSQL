@@ -44,6 +44,10 @@ class Project
     #[Groups("project:read")]
     private $screen;
 
+    #[ORM\Column(type: 'string', length: 255, nullable: true)]
+    #[Groups("project:read")]
+    private $link;
+
     public function __construct()
     {
         $this->languages = new ArrayCollection();
