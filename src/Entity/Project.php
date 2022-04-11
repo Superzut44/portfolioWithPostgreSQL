@@ -6,6 +6,7 @@ use App\Repository\ProjectRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: ProjectRepository::class)]
 class Project
@@ -16,24 +17,31 @@ class Project
     private $id;
 
     #[ORM\Column(type: 'string', length: 40)]
+    #[Groups("project:read")]
     private $name;
 
     #[ORM\Column(type: 'text', nullable: true)]
+    #[Groups("project:read")]
     private $description;
 
     #[ORM\Column(type: 'string', length: 255, nullable: true)]
+    #[Groups("project:read")]
     private $image;
 
     #[ORM\Column(type: 'string', length: 255, nullable: true)]
+    #[Groups("project:read")]
     private $github;
 
     #[ORM\ManyToMany(targetEntity: Language::class, mappedBy: 'projects')]
+    #[Groups("project:read")]
     private $languages;
 
     #[ORM\ManyToMany(targetEntity: Tool::class, mappedBy: 'projects')]
+    #[Groups("project:read")]
     private $tools;
 
     #[ORM\ManyToOne(targetEntity: Screen::class, inversedBy: 'projects')]
+    #[Groups("project:read")]
     private $screen;
 
     public function __construct()

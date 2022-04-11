@@ -46,23 +46,21 @@ export default function Projects() {
                             <Card.Title>{project.name}</Card.Title>
                             <Card.Text>{project.description}</Card.Text>
                             <Button href={project.link} className="card_button" >Link
-                                <img src={require('../../images/' + project.icon)} alt="c" width="30" height="30"/>
+                                <img src={require('../../images/' + project.screen.image)} alt="c" width="30" height="30"/>
                             </Button>
                             <a href={project.github} target="_blank">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="c" width="30" height="30"/>
                             </a>
                         </Card.Body>
                         <Card.Footer>
-                            {console.log(project.language)}
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="js" width="30" height="30"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="js" width="30" height="30"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="php" width="30" height="30"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="bootstrap" width="30" height="30" />
+                            {project.languages.map((language, idx) => (
+                                <img src={ language.image } alt="js" width="30" height="30"/>
+                            ))}
                         </Card.Footer>
                         <Card.Footer>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="js" width="30" height="30"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="php" width="30" height="30"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="bootstrap" width="30" height="30" />
+                        {project.tools.map((tool, idx) => (
+                                <img src={ tool.image } alt="js" width="30" height="30"/>
+                            ))}
                         </Card.Footer>
                     </Card>
                     ))}

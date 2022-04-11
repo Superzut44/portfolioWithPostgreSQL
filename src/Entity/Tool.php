@@ -6,6 +6,7 @@ use App\Repository\ToolRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: ToolRepository::class)]
 class Tool
@@ -16,9 +17,11 @@ class Tool
     private $id;
 
     #[ORM\Column(type: 'string', length: 40)]
+    #[Groups("project:read")]
     private $name;
 
     #[ORM\Column(type: 'string', length: 255)]
+    #[Groups("project:read")]
     private $image;
 
     #[ORM\ManyToMany(targetEntity: Project::class, inversedBy: 'tools')]
