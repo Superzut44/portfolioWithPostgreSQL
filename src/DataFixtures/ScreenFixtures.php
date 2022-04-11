@@ -15,15 +15,15 @@ class ScreenFixtures extends Fixture implements DependentFixtureInterface
         $screen = new Screen();
         $screen->setName('phone');
         $screen->setImage('icon8-phone.png');
-        $screen->addProject($this->getReference('project_0'));
+        $screen->addProject($this->getReference('project_marcheconclu'));
         
         $manager->persist($screen);
 
         $screen = new Screen();
         $screen->setName('phone');
         $screen->setImage('icon8-laptop-and-phone.png');
-        $screen->addProject($this->getReference('project_1'));
-        $screen->addProject($this->getReference('project_2'));
+        $screen->addProject($this->getReference('project_unlock'));
+        $screen->addProject($this->getReference('project_wildpost'));
         
         $manager->persist($screen);
 

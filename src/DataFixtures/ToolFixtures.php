@@ -2,24 +2,38 @@
 
 namespace App\DataFixtures;
 
+use App\Entity\Tool;
 use Doctrine\Persistence\ObjectManager;
 use Doctrine\Bundle\FixturesBundle\Fixture;
-use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 
-class ToolFixtures extends Fixture implements DependentFixtureInterface
+class ToolFixtures extends Fixture
 {
+    public const TOOLS = [
+        [
+            'name' => 'Bootstrap',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg',
+        ],
+        [
+            'name' => 'Canva',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg',
+        ],
+        [
+            'name' => 'Composer',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg',
+        ],
+    ];
+
     public function load(ObjectManager $manager): void
     {
-        // $product = new Product();
-        // $manager->persist($product);
+        foreach (self::TOOLS as $toolData) {
+            $tool = new Tool();
+            $tool->setName($toolData['name']);
+            $tool->setImage($toolData['image']);
+            $this->addReference('tool_' . $toolData['name'], $tool);
+            
+            $manager->persist($tool);
+        }
 
         $manager->flush();
-    }
-
-    public function getDependencies()
-    {
-        return [
-            ProjectFixtures::class,
-        ];
     }
 }
