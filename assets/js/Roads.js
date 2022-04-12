@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Routes, Route, Navigate } from "react-router-dom";
+import AboutMe from './components/AboutMe';
 import Presentation from './components/Presentation';
 import Projects from './components/Projects';
 
@@ -8,6 +9,7 @@ class Roads extends Component {
         return (
             <Routes>
                 <Route path="/presentation" element={<Presentation />} />
+                <Route path="/aboutme" element={<AboutMe />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/" element={<Navigate replace to="/presentation" />} />
                 {/* <Route path="/client/:id" element={<ClientInformations />} /> */}

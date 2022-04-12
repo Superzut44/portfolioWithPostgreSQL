@@ -68,6 +68,12 @@ body{
     width: 100%!important;
 }
 
+.navbar-nav {
+    a {
+        min-width: 10rem!important;
+    }
+}
+
 .homenavbar button:focus{
     outline: 15px auto $color-sky!important;
 }
@@ -99,6 +105,7 @@ body{
 
 .container{
     margin-right: 1rem!important;
+    margin-left: initial!important;
 }
 
 .navbar-toggler{
