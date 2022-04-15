@@ -62,12 +62,6 @@ body{
 
 // nav-bar start
 
-.navbar{
-    position: absolute!important;
-    top: 0!important;
-    width: 100%!important;
-}
-
 .navbar-nav {
     a {
         min-width: 10rem!important;
@@ -157,7 +151,9 @@ body{
     list-style: none;
 }
 
-// cards
+// projects end
+
+// cards start
 
 .cards_wrap{
 	padding: 20px;
@@ -259,3 +255,69 @@ body{
     margin-right: .5rem;
     }
 }
+
+// cards end
+
+// about me start
+
+.aboutme-firstsection {
+    margin-top: 10rem;
+    header {
+        padding: 1rem 0 2rem 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        a {
+            padding-left: 5rem;
+        }
+    }
+    article {
+        margin: 4rem 0;
+        text-align: justify;
+        h2 {
+            color: $color-cream;
+            padding: .5rem 4rem;
+            background-color: $color-anthracite;
+        }
+        div {
+            padding: 1rem 4rem 0 4rem;
+        }
+        ul {
+            padding: 1rem;
+            li {
+                list-style-type: circle;
+                padding: .5rem 0;
+            }
+        }
+    }
+
+    h5 {
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .aboutme-firstsection {
+        margin-top: 6rem;
+        article {
+            margin: 1rem 0;
+            div {
+                padding: 2rem 3rem;
+            }
+        }
+        header {
+            justify-content: space-evenly;
+            a {
+                padding-left: 0;
+            }
+        }
+        h5 {
+            text-align: initial;
+        }
+    }
+}
+    
+// about me end
+
+
