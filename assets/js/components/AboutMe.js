@@ -29,10 +29,22 @@ export default function AboutMe() {
                 <article>
                     <h2>Formations</h2>
                     <div>
+                        <h5>Développeur Web Javascript/React</h5>
+                        <h6>Gaea21 formation pendant mon stage</h6>
+                        <p>Février à mars 2022</p>
+                        <p>Javascript, ReactJS, bootstrap/React</p>
+                    </div>
+                    <div>
                         <h5>Développeur Web PHP/Symfony</h5>
                         <h6>Wild Code School à REIMS (51)</h6>
                         <p>Septembre 2021 à février 2022</p>
                         <p>HTML, CSS, Javascript, PHP, Symfony, Git, Github, MySQL, Composer et Twig</p>
+                    </div>
+                    <div>
+                        <h5>Développeur Web C, html5, css3 et Javascript</h5>
+                        <h6>Autodidacte avec livres Edition ENI</h6>
+                        <p>Septembre 2021</p>
+                        <p>C, HTML, CSS, Javascript</p>
                     </div>
                 </article>
                 <article>
