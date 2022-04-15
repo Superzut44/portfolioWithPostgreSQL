@@ -249,6 +249,8 @@ body{
     background-color: $color-olive!important;
     border: 2px solid $color-olive!important;
     margin-right: 2rem;
+    display: flex;
+    align-items: center;
     img{
         margin-left: 1rem;
     }
@@ -259,6 +261,10 @@ body{
     img{
     margin-right: .5rem;
     }
+}
+
+.cards_wrap {
+    justify-content: space-evenly;
 }
 
 // cards end
