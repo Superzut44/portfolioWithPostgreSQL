@@ -54,12 +54,12 @@ export default function Projects() {
                         </Card.Body>
                         <Card.Footer>
                             {project.languages.map((language, idx) => (
-                                <img src={ language.image } alt="js" width="30" height="30"/>
+                                <img key={idx} src={ language.image } alt="js" width="30" height="30"/>
                             ))}
                         </Card.Footer>
                         <Card.Footer>
                         {project.tools.map((tool, idx) => (
-                                <img src={ tool.image } alt="js" width="30" height="30"/>
+                                <img key={idx} src={ tool.image } alt="js" width="30" height="30"/>
                             ))}
                         </Card.Footer>
                     </Card>

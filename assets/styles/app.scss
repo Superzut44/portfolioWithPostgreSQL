@@ -119,6 +119,12 @@ body{
     padding-right: 2rem!important;
 }
 
+@media screen and (max-width: 322px){
+    .homenavbar-classmobile span{
+            font-size: 1rem!important;
+    }
+}
+
 // nav-bar end
 
 
