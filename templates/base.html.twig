@@ -15,10 +15,10 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
+<div id="root"></div>
 {% block body %}{% endblock %}
 {% block javascripts %}
-    {{ encore_entry_script_tags('appNavbar') }}
-    {{ encore_entry_script_tags('appPresentation') }}
+    {{ encore_entry_script_tags('app') }}
 {% endblock %}
 </body>
 </html>

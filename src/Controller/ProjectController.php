@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ProjectController extends AbstractController
 {
-    #[Route('/api/projects/test', name: 'api_projects_test', methods: 'GET')]
+    #[Route('/api/projects', name: 'api_projects', methods: 'GET')]
     public function getProjects(ProjectRepository $projectRepository): Response
     {
         return $this->json($projectRepository->findAll(), 200,[], ['groups' => 'project:read']);

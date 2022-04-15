@@ -23,7 +23,7 @@ export default function Projects() {
 
     useEffect(() => {
         axios
-        .get(`api/projects/test`)
+        .get(`api/projects`)
         .then((resp) => {
             setProjects(resp.data);
         });
