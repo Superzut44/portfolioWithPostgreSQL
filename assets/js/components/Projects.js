@@ -48,9 +48,13 @@ export default function Projects() {
                             <Button href={project.link} className="card_button" >Lien
                                 <img src={require('../../images/' + project.screen.image)} alt="screen" width="30" height="30"/>
                             </Button>
-                            <a href={project.github} target="_blank">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" width="30" height="30"/>
-                            </a>
+                            { project.github ?
+                                <a href={project.github} target="_blank">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" width="30" height="30"/>
+                                </a>
+                                : ""
+                            }
+
                         </Card.Body>
                         <Card.Footer>
                             {project.languages.map((language, idx) => (
