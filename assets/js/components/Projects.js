@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 // https://create-react-app.dev/docs/adding-images-fonts-and-files/
 // https://pixabay.com/
-import imgcard from '../../images/538x160_2.jpg';
+import cloud from '../../images/cloud.jpg';
 
 // npm install react-bootstrap bootstrap@5.1.3
 // composer install && composer update
@@ -41,13 +41,21 @@ export default function Projects() {
                     <div className="cards_wrap">
                     {projects.map((project, idx) => (
                         <Card key={idx} style={{ width: "30rem"}} className="card_margin">
+                        { project.image ?
                         <Card.Img variant="top" src={require('../../images/' + project.image)} style={{ height: "15rem"}} />
+                        : <Card.Img variant="top" src={ cloud } style={{ height: "15rem"}} />
+                        }
                         <Card.Body>
                             <Card.Title>{project.name}</Card.Title>
                             <Card.Text>{project.description}</Card.Text>
-                            <Button href={project.link} className="card_button" >Lien
-                                <img src={require('../../images/' + project.screen.image)} alt="screen" width="30" height="30"/>
-                            </Button>
+                            { project.link ?
+                                <Button href={project.link} className="card_button" >Lien
+                                    { project.screen ?
+                                        <img src={require('../../images/' + project.screen.image)} alt="screen" width="30" height="30"/>
+                                        : ""
+                                    }
+                                </Button>
+                                : "" }
                             { project.github ?
                                 <a href={project.github} target="_blank">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" width="30" height="30"/>

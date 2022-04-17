@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 // https://create-react-app.dev/docs/adding-images-fonts-and-files/
 // https://pixabay.com/
-import imgcard from '../../images/538x160_2.jpg';
+import cloud from '../../images/cloud.jpg';
 
 // npm install react-bootstrap bootstrap@5.1.3
 // composer install && composer update
@@ -42,7 +42,7 @@ export default function Projects() {
                     {projects.map((project, idx) => (
                         <div key={idx} className="card_item">
                             <div className="card_inner">
-                                <img src={ imgcard } style={{ width: "10rem"}} alt="image"/>
+                                <img src={ cloud } style={{ width: "10rem"}} alt="image"/>
                                 <div className="role_name">{project.name}</div>
                                 <div className="real_name">Chadwick Boseman</div>
                                 <div className="film">{project.description}</div>

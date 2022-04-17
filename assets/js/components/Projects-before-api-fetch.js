@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // https://create-react-app.dev/docs/adding-images-fonts-and-files/
 // https://pixabay.com/
-import imgcard from '../../images/538x160_2.jpg';
+import cloud from '../../images/cloud.jpg';
 
 // npm install react-bootstrap bootstrap@5.1.3
 // composer install && composer update
@@ -29,7 +29,7 @@ export default function Projects() {
             <ul className="projects-cards">
                 <li>
                     <Card className="projects-card" style={{ width: '20rem' }}>
-                        <Card.Img variant="top" src={ imgcard } />
+                        <Card.Img variant="top" src={ cloud } />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
                             <Card.Text>
@@ -55,7 +55,7 @@ export default function Projects() {
                 </li>
                 <li>
                     <Card className="projects-card" style={{ width: '20rem' }}>
-                        <Card.Img variant="top" src={ imgcard } />
+                        <Card.Img variant="top" src={ cloud } />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
                             <Card.Text>

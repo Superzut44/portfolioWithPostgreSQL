@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 // https://create-react-app.dev/docs/adding-images-fonts-and-files/
 // https://pixabay.com/
-import imgcard from '../../images/538x160_2.jpg';
+import cloud from '../../images/cloud.jpg';
 
 // npm install react-bootstrap bootstrap@5.1.3
 // composer install && composer update
