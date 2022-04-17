@@ -17,9 +17,15 @@ class ProjectType extends AbstractType
             ->add('image')
             ->add('github')
             ->add('link')
-            ->add('languages')
-            ->add('tools')
-            ->add('screen')
+            ->add('languages', null, [
+                'choice_label' => 'name',
+                'multiple' => true
+                ])
+            ->add('tools', null, [
+                'choice_label' => 'name',
+                'multiple' => true
+                ])
+            ->add('screen', null, ['choice_label' => 'name'])
         ;
     }
 

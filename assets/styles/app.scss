@@ -11,6 +11,10 @@ body{
     font-family: $fontworksans;
 }
 
+.marginTop {
+    margin-top: 8rem!important;
+}
+
 // presentation page start
 
 .presentation{
@@ -117,6 +121,7 @@ body{
 .navbar-nav a {
     min-width: 3rem !important;
     padding-right: 2rem!important;
+    white-space: nowrap;
 }
 
 @media screen and (max-width: 322px){
