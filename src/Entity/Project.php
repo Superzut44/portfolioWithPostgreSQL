@@ -32,11 +32,11 @@ class Project
     #[Groups("project:read")]
     private $github;
 
-    #[ORM\ManyToMany(targetEntity: Language::class, mappedBy: 'projects')]
+    #[ORM\ManyToMany(targetEntity: Language::class, inversedBy: 'projects')]
     #[Groups("project:read")]
     private $languages;
 
-    #[ORM\ManyToMany(targetEntity: Tool::class, mappedBy: 'projects')]
+    #[ORM\ManyToMany(targetEntity: Tool::class, inversedBy: 'projects')]
     #[Groups("project:read")]
     private $tools;
 
@@ -131,7 +131,6 @@ class Project
     {
         if (!$this->languages->contains($language)) {
             $this->languages[] = $language;
-            $language->addProject($this);
         }
 
         return $this;
@@ -140,7 +139,6 @@ class Project
     public function removeLanguage(Language $language): self
     {
         if ($this->languages->removeElement($language)) {
-            $language->removeProject($this);
         }
 
         return $this;
@@ -158,7 +156,6 @@ class Project
     {
         if (!$this->tools->contains($tool)) {
             $this->tools[] = $tool;
-            $tool->addProject($this);
         }
 
         return $this;
@@ -167,7 +164,6 @@ class Project
     public function removeTool(Tool $tool): self
     {
         if ($this->tools->removeElement($tool)) {
-            $tool->removeProject($this);
         }
 
         return $this;

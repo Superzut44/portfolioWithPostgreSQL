@@ -14,7 +14,6 @@ class LanguageType extends AbstractType
         $builder
             ->add('name')
             ->add('image')
-            ->add('projects', null, ['choice_label' => 'name'])
         ;
     }
 

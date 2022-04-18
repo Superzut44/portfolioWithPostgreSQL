@@ -24,12 +24,12 @@ class Language
     #[Groups("project:read")]
     private $image;
 
-    #[ORM\ManyToMany(targetEntity: Project::class, inversedBy: 'languages')]
+    #[ORM\ManyToMany(targetEntity: Project::class, mappedBy: 'languages')]
     private $projects;
 
     public function __construct()
     {
-        $this->project = new ArrayCollection();
+        $this->projects = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -73,6 +73,7 @@ class Language
     {
         if (!$this->projects->contains($project)) {
             $this->projects[] = $project;
+            $project->addLanguage($this);
         }
 
         return $this;
@@ -81,6 +82,7 @@ class Language
     public function removeProject(Project $project): self
     {
         $this->projects->removeElement($project);
+        $project->removeLanguage($this);
 
         return $this;
     }

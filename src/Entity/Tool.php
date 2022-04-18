@@ -24,7 +24,7 @@ class Tool
     #[Groups("project:read")]
     private $image;
 
-    #[ORM\ManyToMany(targetEntity: Project::class, inversedBy: 'tools')]
+    #[ORM\ManyToMany(targetEntity: Project::class, mappedBy: 'tools')]
     private $projects;
 
     public function __construct()
@@ -73,6 +73,7 @@ class Tool
     {
         if (!$this->projects->contains($project)) {
             $this->projects[] = $project;
+            $project->addTool($this);
         }
 
         return $this;
@@ -81,6 +82,7 @@ class Tool
     public function removeProject(Project $project): self
     {
         $this->projects->removeElement($project);
+        $project->removeTool($this);
 
         return $this;
     }

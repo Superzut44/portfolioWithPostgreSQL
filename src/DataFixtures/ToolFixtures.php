@@ -65,10 +65,6 @@ class ToolFixtures extends Fixture
             'name' => 'Visual Studio Code',
             'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg',
         ],
-        [
-            'name' => 'C',
-            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg',
-        ],
     ];
 
     public function load(ObjectManager $manager): void
