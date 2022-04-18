@@ -19,13 +19,18 @@ class ProjectType extends AbstractType
             ->add('link')
             ->add('languages', null, [
                 'choice_label' => 'name',
+                'required'      => true,
                 'multiple' => true
                 ])
             ->add('tools', null, [
                 'choice_label' => 'name',
+                'required'      => true,
                 'multiple' => true
                 ])
-            ->add('screen', null, ['choice_label' => 'name'])
+            ->add('screen', null, [
+                'choice_label' => 'name',
+                'required'      => true
+                ])
         ;
     }
 
