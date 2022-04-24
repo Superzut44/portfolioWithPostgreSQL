@@ -19,4 +19,8 @@
 
         <button type="submit">login</button>
     </form>
+
+    {% if last_username %}
+        <a href="{{ path('app_logout') }}">Deconnexion</a>
+    {% endif %}
 {% endblock %}
