@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Screen{% endblock %}
+
+{% block body %}
+    <div class="marginTop"></div>
+    <h1>Create new Screen</h1>
+
+    {{ include('screen/_form.html.twig') }}
+
+    <a href="{{ path('app_screen_index') }}">back to list</a>
+{% endblock %}

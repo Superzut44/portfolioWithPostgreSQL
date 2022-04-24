@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Screen{% endblock %}
+
+{% block body %}
+    <div class="marginTop"></div>
+    <h1>Edit Screen</h1>
+
+    {{ include('screen/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_screen_index') }}">back to list</a>
+
+    {{ include('screen/_delete_form.html.twig') }}
+{% endblock %}
