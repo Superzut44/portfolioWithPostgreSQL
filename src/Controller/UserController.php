@@ -6,6 +6,7 @@ use Exception;
 use App\Entity\User;
 use App\Form\UserType;
 use App\Repository\UserRepository;
+use Flasher\Toastr\Prime\ToastrFactory;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -56,7 +57,7 @@ class UserController extends AbstractController
         User $user,
         UserPasswordHasherInterface $userPasswordHasher,
         EntityManagerInterface $entityManager,
-        //ToastrFactory $flasher,
+        ToastrFactory $flasher,
     ): Response {
         $form = $this->createForm(UserType::class, $user);
         $form->handleRequest($request);
@@ -71,11 +72,11 @@ class UserController extends AbstractController
                 );
                 $entityManager->persist($user);
                 $entityManager->flush();
-                //$flasher->addSuccess('Votre profil utilisateur a été modifié !');
+                $flasher->addSuccess('Votre profil utilisateur a été modifié !');
 
                 return $this->redirectToRoute('app_user_index');
             } catch (Exception $e) {
-                //$flasher->addError("Les modifications n'ont pas fonctionnées. Veuillez réessayer!");
+                $flasher->addError("Les modifications n'ont pas fonctionnées. Veuillez réessayer!");
             }
         }
 
