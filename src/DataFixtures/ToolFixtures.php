@@ -65,6 +65,54 @@ class ToolFixtures extends Fixture
             'name' => 'Visual Studio Code',
             'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg',
         ],
+        [
+            'name' => 'Apache',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original-wordmark.svg',
+        ],
+        [
+            'name' => 'Babel',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.svg',
+        ],
+        [
+            'name' => 'docker',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg',
+        ],
+        [
+            'name' => 'Figma',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
+        ],
+        [
+            'name' => 'Java',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg',
+        ],
+        [
+            'name' => 'jQuery',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg',
+        ],
+        [
+            'name' => 'Angular',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',
+        ],
+        [
+            'name' => 'Laravel',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg',
+        ],
+        [
+            'name' => 'Node.js',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg',
+        ],
+        [
+            'name' => 'PostgreSQL',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg',
+        ],
+        [
+            'name' => 'ssh',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ssh/ssh-original-wordmark.svg',
+        ],
+        [
+            'name' => 'Vue.js',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg',
+        ],
     ];
 
     public function load(ObjectManager $manager): void
