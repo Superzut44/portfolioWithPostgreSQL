@@ -11,10 +11,11 @@
         {% if last_username %}
             <a href="{{ path('app_logout') }}">Deconnexion</a>
             <div class="index">
-                <a href="{{ path('app_project_index') }}">back to Project list</a>
-                <a href="{{ path('app_language_index') }}">back to Language list</a>
-                <a href="{{ path('app_tool_index') }}">back to Tool list</a>
-                <a href="{{ path('app_screen_index') }}">back to Screen list</a>
+                <a href="{{ path('app_user_index') }}">back to user list</a>
+                <a href="{{ path('app_project_index') }}">back to project list</a>
+                <a href="{{ path('app_language_index') }}">back to language list</a>
+                <a href="{{ path('app_tool_index') }}">back to tool list</a>
+                <a href="{{ path('app_screen_index') }}">back to screen list</a>
             </div>
         {% else %}
         <form action="{{ path('app_login') }}" method="post">
