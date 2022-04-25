@@ -11,8 +11,8 @@ body{
     font-family: $fontworksans;
 }
 
-.marginTop {
-    margin-top: 8rem!important;
+.margin {
+    margin: 8rem 1rem 0 1rem!important;
 }
 
 // presentation page start
@@ -124,9 +124,27 @@ body{
     white-space: nowrap;
 }
 
+.symfreact {
+    a {
+    color: $color-black!important;
+    font-size: 2.5rem!important;
+    cursor: text;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+.homenavbar-classmobile .symfreact a {
+    font-size: 1.5rem!important;
+}
+
 @media screen and (max-width: 322px){
     .homenavbar-classmobile span{
             font-size: 1rem!important;
+    }
+    .homenavbar-classmobile .symfreact a {
+        font-size: 1rem!important;
     }
 }
 
@@ -344,4 +362,11 @@ body{
     
 // about me end
 
+// login start
+
+.index {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
 

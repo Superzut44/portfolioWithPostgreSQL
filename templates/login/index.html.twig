@@ -3,24 +3,31 @@
 {% block title %}Hello LoginController!{% endblock %}
 
 {% block body %}
-    <div class="marginTop"></div>
-    {% if error %}
-        <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-    {% endif %}
+    <div class="margin">
+        {% if error %}
+            <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+        {% endif %}
+        
+        {% if last_username %}
+            <a href="{{ path('app_logout') }}">Deconnexion</a>
+            <div class="index">
+                <a href="{{ path('app_project_index') }}">back to Project list</a>
+                <a href="{{ path('app_language_index') }}">back to Language list</a>
+                <a href="{{ path('app_tool_index') }}">back to Tool list</a>
+                <a href="{{ path('app_screen_index') }}">back to Screen list</a>
+            </div>
+        {% else %}
+        <form action="{{ path('app_login') }}" method="post">
+            <label for="username">Email:</label>
+            <input type="text" id="username" name="_username" value="{{ last_username }}"/>
 
-    <form action="{{ path('app_login') }}" method="post">
-        <label for="username">Email:</label>
-        <input type="text" id="username" name="_username" value="{{ last_username }}"/>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="_password"/>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="_password"/>
+            <input type="hidden" name="_target_path" value="/app/login"/>
 
-        <input type="hidden" name="_target_path" value="/account"/>
-
-        <button type="submit">login</button>
-    </form>
-
-    {% if last_username %}
-        <a href="{{ path('app_logout') }}">Deconnexion</a>
-    {% endif %}
+            <button type="submit">login</button>
+        </form>        
+        {% endif %}
+    </div>
 {% endblock %}
