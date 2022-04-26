@@ -12,7 +12,7 @@ body{
 }
 
 .margin {
-    margin: 8rem 1rem 0 1rem!important;
+    margin: 10rem 1rem 0 1rem!important;
 }
 
 // presentation page start
@@ -365,8 +365,10 @@ body{
 // login start
 
 .index {
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     padding: 1rem 0;
 }
 
+// login end

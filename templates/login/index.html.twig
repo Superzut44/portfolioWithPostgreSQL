@@ -8,7 +8,7 @@
             <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
         {% endif %}
         
-        {% if last_username %}
+        {% if is_granted("ROLE_USER") %}
             <a href="{{ path('app_logout') }}">Deconnexion</a>
         {% else %}
         <form action="{{ path('app_login') }}" method="post">
