@@ -40,6 +40,12 @@ class LanguageFixtures extends Fixture
         $this->addReference('language_C', $language);
         $manager->persist($language);
 
+        $language = new Language();
+        $language->setName('TypeScript');
+        $language->setImage('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg');
+        $this->addReference('language_TypeScript', $language);
+        $manager->persist($language);
+
         $manager->flush();
     }
 }
