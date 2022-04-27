@@ -300,8 +300,8 @@ body{
 
 // about me start
 
-.aboutme-firstsection {
-    margin-top: 10rem;
+.aboutme-section {
+    margin: 10rem 10rem 4rem 10rem;
     header {
         padding: 1rem 0 2rem 0;
         display: flex;
@@ -310,6 +310,11 @@ body{
         justify-content: flex-start;
         a {
             padding-left: 5rem;
+        }
+    }
+    article:first-of-type {
+        p {
+            font-size: 1.1rem;
         }
     }
     article {
@@ -332,10 +337,22 @@ body{
                 padding: .5rem 0;
             }
         }
-    }
-
-    h5 {
-        font-weight: bold;
+        h5 {
+            font-weight: bold;
+            padding-bottom: .5rem;
+        }
+        h6 {
+            font-style: italic;
+        }
+        p {
+            font-size: .9rem;
+            padding-top: .3rem;
+            padding-bottom: .5rem;
+        }
+        img {
+            margin-right: 1rem;
+            margin-bottom: 2rem;
+        }
     }
 }
 

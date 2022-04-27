@@ -6,13 +6,13 @@ export default function AboutMe() {
 
     return (
         <>
-            <section className='aboutme-firstsection'>
+            <section className='aboutme-section'>
                 <header>
                     <a href="https://github.com/Superzut44" target="_blank">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github" width="40" height="40"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github" width="60" height="60"/>
                     </a>
                     <a href="https://www.linkedin.com/in/xavier-chavaudrey-297834221/" target="_blank">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="Linkedin" width="40" height="40"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="Linkedin" width="60" height="60"/>
                     </a>
                     {/* <a href="https://github.com/Superzut44" target="_blank">
                         <img src={ imageEmail } alt="email" width="40" height="40"/>
@@ -22,29 +22,57 @@ export default function AboutMe() {
                 <article>
                     <h2>A propos</h2>
                     <div>
-                        <p>Passionné par les technologies web et mobile, c’est en autodidacte que j’ai commencé à prendre goût au métier de développeur en commençant par apprendre le language C, HTML, CSS et Javascript. Puis à la Wild Code School pour apprendre PHP / Symfony et acquérir les méthodes de travail en équipe.</p>
-                        <p>Organisé, créatif, réactif, aimant relever de nouveaux challenges, s'intégrant facilement dans une équipe, je vous propose mes compétences de développeur web. Ma réorientation professionnelle est un choix personnel d'approfondir mes connaissances. Les compétences acquises durant mon parcours professionnel seront un atout pour mon employeur.</p>
+                        <p>Passionné par les technologies web, c’est en autodidacte que j’ai commencé à prendre goût au métier
+                            de développeur en commençant par apprendre les langages C, HTML, CSS puis Javascript.
+                        </p>
+                        <p>Ensuite en intégrant la Wild Code School
+                            pour approfondir mes connaissances et apprendre un nouveau langage PHP avec un de ses frameworks Symfony,
+                            mais également pour acquérir les méthodes agiles de travail en équipe comme Scrum.
+                        </p>
+                        <p>Organisé, créatif, réactif, aimant relever de nouveaux challenges, s'intégrant facilement dans une équipe,
+                            je vous propose mes compétences de développeur web.
+                        </p>
+                        <p>Ma réorientation professionnelle est un choix personnel
+                            d'approfondir mes connaissances. Les compétences acquises durant mon parcours professionnel
+                            seront un atout pour mon employeur.
+                        </p>
                     </div>
                 </article>
                 <article>
                     <h2>Formations</h2>
                     <div>
-                        <h5>Développeur Web Javascript/React</h5>
-                        <h6>Gaea21 formation pendant mon stage</h6>
-                        <p>Février à mars 2022</p>
-                        <p>Javascript, ReactJS, bootstrap/React</p>
+                        <h5>Library React, puis intégration de celle-ci au framework Symfony</h5>
+                        <h6>Gaea21 à Lancy, Suisse</h6>
+                        <h6>Formation au début du stage puis mise en application sur leur site</h6>
+                        <p>de février à mars 2022</p>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="React" width="50" height="50"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original-wordmark.svg" alt="Symfony" width="50" height="50"/>
                     </div>
                     <div>
-                        <h5>Développeur Web PHP/Symfony</h5>
+                        <h5>Formation "Développeur web et web mobile" &nbsp;PHP/Symfony</h5>
                         <h6>Wild Code School à REIMS (51)</h6>
-                        <p>Septembre 2021 à février 2022</p>
-                        <p>HTML, CSS, Javascript, PHP, Symfony, Git, Github, MySQL, Composer et Twig</p>
+                        <p>de septembre 2021 à février 2022</p>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" width="50" height="50"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" alt="Git" width="50" height="50"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" width="50" height="50"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original-wordmark.svg" alt="Symfony" width="50" height="50"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" alt="Composer" width="50" height="50"/>
+                        <img src="http://naolis.com/portail/wp-content/uploads/2014/12/twig-logo.png" alt="Twig" width="50" height="50"/>
+                        <img src="https://azure.microsoft.com/en-us/patterns/styles/glyphs-icons/azure-sql-database.svg" alt="SQL" width="50" height="50"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="50" height="50"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/doctrine/doctrine-original-wordmark.svg" alt="Doctrine" width="50" height="50"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Javascript" width="50" height="50"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" width="50" height="50"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="Bootstrap" width="50" height="50"/>
                     </div>
                     <div>
-                        <h5>Développeur Web C, html5, css3 et Javascript</h5>
-                        <h6>Autodidacte avec livres Edition ENI</h6>
-                        <p>Septembre 2021</p>
-                        <p>C, HTML, CSS, Javascript</p>
+                        <h5>Langage C, HTML, CSS puis Javascript</h5>
+                        <h6>Autodidacte avec livres Edition ENI, et cours en ligne OpenClassrooms</h6>
+                        <p>Depuis mai 2019</p>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" width="50" height="50"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="HTML" width="50" height="50"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS" width="50" height="50"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Javascript" width="50" height="50"/>
                     </div>
                 </article>
                 <article>

@@ -19,7 +19,7 @@ class ToolFixtures extends Fixture
         ],
         [
             'name' => 'Bootstrap',
-            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg',
+            'image' => '',
         ],
         [
             'name' => 'Canva',
@@ -108,6 +108,14 @@ class ToolFixtures extends Fixture
         [
             'name' => 'Vue.js',
             'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg',
+        ],
+        [
+            'name' => 'Twig',
+            'image' => 'http://naolis.com/portail/wp-content/uploads/2014/12/twig-logo.png',
+        ],
+        [
+            'name' => 'Doctrine',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/doctrine/doctrine-original-wordmark.svg',
         ],
     ];
 
