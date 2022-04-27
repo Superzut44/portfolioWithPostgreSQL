@@ -1,4 +1,4 @@
-<?php
+<?PHP
 
 namespace App\DataFixtures;
 
@@ -16,7 +16,7 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'image' => 'marcheconclu.png',
             'link' => 'https://marcheconclu.chavaudreyxavier.fr',
             'github' => 'https://github.com/Superzut44/marche-conclu',
-            'languages' => ['html', 'css', 'php', 'javascript'],
+            'languages' => ['HTML', 'CSS', 'PHP', 'Javascript'],
             'tools' => ['Symfony', 'Sass', 'Bootstrap', 'MySQL', 'Composer', 'Git', 'Visual Studio Code', 'Linux']
         ],
         [
@@ -25,7 +25,7 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'image' => 'unlock.jpg',
             'link' => 'https://unlock.labetowiez.fr/index.php',
             'github' => 'https://github.com/Superzut44/unlock',
-            'languages' => ['html', 'css', 'php'],
+            'languages' => ['HTML', 'CSS', 'PHP'],
             'tools' => ['Symfony', 'MySQL', 'Git', 'Visual Studio Code', 'Linux']
         ],
         [
@@ -34,7 +34,7 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'image' => 'wild-post.jpg',
             'link' => 'https://chavaudrey.me/Wild-Post/',
             'github' => 'https://github.com/Superzut44/Wild-Post',
-            'languages' => ['html', 'css'],
+            'languages' => ['HTML', 'CSS'],
             'tools' => ['Git', 'Visual Studio Code', 'Linux']
         ],
     ];

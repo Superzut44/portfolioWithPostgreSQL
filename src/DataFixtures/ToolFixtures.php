@@ -82,10 +82,6 @@ class ToolFixtures extends Fixture
             'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
         ],
         [
-            'name' => 'Java',
-            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg',
-        ],
-        [
             'name' => 'jQuery',
             'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg',
         ],
