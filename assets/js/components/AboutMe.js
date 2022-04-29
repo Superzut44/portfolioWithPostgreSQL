@@ -17,7 +17,6 @@ export default function AboutMe() {
                     {/* <a href="https://github.com/Superzut44" target="_blank">
                         <img src={ imageEmail } alt="email" width="40" height="40"/>
                     </a> */}
-                    
                 </header>
                 <article>
                     <h2>A propos</h2>
@@ -40,6 +39,13 @@ export default function AboutMe() {
                 </article>
                 <article>
                     <h2>Formations</h2>
+                    <div>
+                        <h5>Langage TypeScript et le framework Angular </h5>
+                        <h6>Autodidacte avec les cours offert par la Wild Code School</h6>
+                        <p>depuis mai 2019 et en cours</p>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="50" height="50"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" width="50" height="50"/>
+                    </div>
                     <div>
                         <h5>Library React, puis intégration de celle-ci au framework Symfony</h5>
                         <h6>Gaea21 à Lancy, Suisse</h6>
@@ -67,8 +73,8 @@ export default function AboutMe() {
                     </div>
                     <div>
                         <h5>Langage C, HTML, CSS puis Javascript</h5>
-                        <h6>Autodidacte avec livres Edition ENI, et cours en ligne OpenClassrooms</h6>
-                        <p>Depuis mai 2019</p>
+                        <h6>Autodidacte avec les livres Edition ENI, et avec les cours en ligne OpenClassrooms</h6>
+                        <p>de mai 2019 à février 2021</p>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" width="50" height="50"/>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="HTML" width="50" height="50"/>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS" width="50" height="50"/>
@@ -80,21 +86,37 @@ export default function AboutMe() {
                     <div>
                         <h5>Développeur web PHP/Symfony Javascript/React</h5>
                         <h6>Gaea21 à Lancy, Suisse</h6>
-                        <h7>Depuis février 2022, en stage pour me perfectionner en PHP / Symfony sur des projets, et apprendre Javascript / ReactJS</h7>
+                        <h6>Depuis février 2022, en stage pour me perfectionner en PHP / Symfony sur des projets, et apprendre Javascript / ReactJS</h6>
                         <p>Gaea 21 est une association à but non lucratif de droit suisse qui poursuit un but social idéal, à savoir la mise en œuvre du développement durable et de l’Agenda 21. C’est un vaste réseau de compétences et un groupe de réflexion qui introduit la dimension participative du public au cœur de son action. Gaea21, permet de créer des passerelles entre les entreprises privées, les collectivités publiques et la société civile. L’association se positionne essentiellement comme une interface et un facilitateur entre les différents acteurs du Développement Durable, sachant que l’association reste fondamentalement un acteur elle aussi.</p>
-                        <h5>Développeur web PHP / Symfony</h5>
+                        <h5>Développeur web PHP/Symfony</h5>
                         <h6>Wild Code School</h6>
-                        <h7>Décembre 2021 à février 2022</h7>
+                        <h6>Décembre 2021 à février 2022</h6>
                         <ul>
-                            <li>Projet de création (du 1 décembre 2021 au 11 février 2022) d'un site pour un client, à l'école Wild Code School de Reims avec les langages HTML, CSS, PHP, Symfony, Javascript, Git/Github, Composer, Twig, SASS et MySql.</li>
-                            <li>Projet (du 21 oct au 13 nov 2021) d'un site fictif de type jeu : escape game ( Unlock! Sherlock adventures ) à l'école Wild Code School de Reims avec les langages HTML, CSS, Javascript, Git/Github, PHP, Composer, Twig et MySql.</li>
-                            <li>Projet (du 28 sept au 8 oct 2021) d'un site de type journal sur l'école Wild Code School de Reims avec HTML, CSS, Javascript, Git/Github.</li>
+                            <li>
+                                <a href="https://github.com/Superzut44" target="_blank">
+                                    Projet de création (du 1 décembre 2021 au 11 février 2022) d'un site pour un client, 
+                                    à l'école Wild Code School de Reims avec les langages HTML, CSS, PHP, Symfony, Javascript, 
+                                    Git/Github, Composer, Twig, SASS et MySql.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Superzut44" target="_blank">
+                                    Projet (du 21 oct au 13 nov 2021) d'un site fictif de type jeu : escape game 
+                                    ( Unlock! Sherlock adventures ) à l'école Wild Code School de Reims avec les langages HTML, 
+                                    CSS, Javascript, Git/Github, PHP, Composer, Twig et MySql.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Superzut44" target="_blank">
+                                    Projet (du 28 sept au 8 oct 2021) d'un site de type journal sur l'école Wild Code School 
+                                    de Reims avec HTML, CSS, Javascript, Git/Github.
+                                </a>
+                            </li>
+                            <li><a className="alinkProjects" href="/projects" target="_blank">Lien vers la liste de tous mes projets réalisés</a></li>
                         </ul>
                     </div>
                 </article>
-
             </section>
         </>
     )
-
 }

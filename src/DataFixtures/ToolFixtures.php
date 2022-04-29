@@ -19,7 +19,7 @@ class ToolFixtures extends Fixture
         ],
         [
             'name' => 'Bootstrap',
-            'image' => '',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg',
         ],
         [
             'name' => 'Canva',
@@ -87,7 +87,11 @@ class ToolFixtures extends Fixture
         ],
         [
             'name' => 'Angular',
-            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg',
+        ],
+        [
+            'name' => 'AngularJS',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original-wordmark.svg',
         ],
         [
             'name' => 'Laravel',

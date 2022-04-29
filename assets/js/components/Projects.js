@@ -62,7 +62,6 @@ export default function Projects() {
                                 </a>
                                 : ""
                             }
-
                         </Card.Body>
                         <Card.Footer>
                             {project.languages.map((language, idx) => (
