@@ -93,23 +93,23 @@ export default function AboutMe() {
                         <h6>Décembre 2021 à février 2022</h6>
                         <ul>
                             <li>
-                                <a href="https://github.com/Superzut44" target="_blank">
-                                    Projet de création (du 1 décembre 2021 au 11 février 2022) d'un site pour un client, 
-                                    à l'école Wild Code School de Reims avec les langages HTML, CSS, PHP, Symfony, Javascript, 
-                                    Git/Github, Composer, Twig, SASS et MySql.
+                                <a href="https://marcheconclu.chavaudreyxavier.fr" target="_blank">
+                                Projet de création (du  1 décembre 2021 au 11 février 2022) d'un site Marché Conclu pour une cliente, en version mobile, réalisé en équipe à l'école Wild Code School de Reims.
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/Superzut44" target="_blank">
-                                    Projet (du 21 oct au 13 nov 2021) d'un site fictif de type jeu : escape game 
-                                    ( Unlock! Sherlock adventures ) à l'école Wild Code School de Reims avec les langages HTML, 
-                                    CSS, Javascript, Git/Github, PHP, Composer, Twig et MySql.
+                                <a href="https://fymi.chavaudreyxavier.fr" target="_blank">
+                                Hackaton sur le thème de la musique, réalisé en équipe et en version mobile (le 25 et 26 novembre 2021).
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/Superzut44" target="_blank">
-                                    Projet (du 28 sept au 8 oct 2021) d'un site de type journal sur l'école Wild Code School 
-                                    de Reims avec HTML, CSS, Javascript, Git/Github.
+                                <a href="https://unlock.labetowiez.fr" target="_blank">
+                                Projet de création (du  21 oct au 13 nov 2021) d'un site fictif de type jeu : escape game ( Unlock! Sherlock adventures ), réalisé en équipe à l'école Wild Code School de Reims.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wildpost.chavaudreyxavier.fr/" target="_blank">
+                                Création en équipe (du  28 sept au 8 oct 2021) d'un site fictif de type journal sur l'école Wild Code School de Reims.
                                 </a>
                             </li>
                             <li><a className="alinkProjects" href="/projects" target="_blank">Lien vers la liste de tous mes projets réalisés</a></li>

@@ -12,7 +12,7 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
     public const PROJECTS = [
         [
             'name' => 'Marché Conclu',
-            'description' => "Projet de création (du  1 décembre 2021 au 11 février 2022) d'un site Marché Conclu pour une cliente, en version mobile, à l'école Wild Code School de Reims.",
+            'description' => "Projet de création (du  1 décembre 2021 au 11 février 2022) d'un site Marché Conclu pour une cliente, en version mobile, réalisé en équipe à l'école Wild Code School de Reims.",
             'image' => 'marcheconclu.png',
             'link' => 'https://marcheconclu.chavaudreyxavier.fr',
             'github' => 'https://github.com/Superzut44/marche-conclu',
@@ -20,19 +20,28 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'tools' => ['Symfony', 'Sass', 'Bootstrap', 'MySQL', 'Composer', 'Git', 'Visual Studio Code', 'Linux']
         ],
         [
+            'name' => 'Fymi',
+            'description' => "Hackaton sur le thème de la musique, réalisé en équipe et en version mobile (le 25 et 26 novembre 2021).",
+            'image' => 'fymi.png',
+            'link' => 'https://fymi.chavaudreyxavier.fr',
+            'github' => 'https://github.com/Superzut44/fymi',
+            'languages' => ['HTML', 'CSS', 'PHP'],
+            'tools' => ['Symfony', 'MySQL', 'Git', 'Visual Studio Code', 'Linux']
+        ],
+        [
             'name' => 'Unlock',
-            'description' => "Projet de création (du  21 oct au 13 nov 2021) d'un site fictif de type jeu : escape game ( Unlock! Sherlock adventures ) à l'école Wild Code School de Reims.",
+            'description' => "Projet de création (du  21 oct au 13 nov 2021) d'un site fictif de type jeu : escape game ( Unlock! Sherlock adventures ), réalisé en équipe à l'école Wild Code School de Reims.",
             'image' => 'unlock.jpg',
-            'link' => 'https://unlock.labetowiez.fr/index.php',
+            'link' => 'https://unlock.labetowiez.fr',
             'github' => 'https://github.com/Superzut44/unlock',
             'languages' => ['HTML', 'CSS', 'PHP'],
             'tools' => ['Symfony', 'MySQL', 'Git', 'Visual Studio Code', 'Linux']
         ],
         [
             'name' => 'Wild Post',
-            'description' => "Création (du  28 sept au 8 oct 2021) d'un site fictif de type journal sur l'école Wild Code School de Reims.",
+            'description' => "Création en équipe (du  28 sept au 8 oct 2021) d'un site fictif de type journal sur l'école Wild Code School de Reims.",
             'image' => 'wild-post.jpg',
-            'link' => 'https://chavaudrey.me/Wild-Post/',
+            'link' => 'https://wildpost.chavaudreyxavier.fr',
             'github' => 'https://github.com/Superzut44/Wild-Post',
             'languages' => ['HTML', 'CSS'],
             'tools' => ['Git', 'Visual Studio Code', 'Linux']
@@ -61,6 +70,8 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
                 $this->addReference('project_unlock', $project);
             } else if ($projectData['image'] === 'wild-post.jpg') {
                 $this->addReference('project_wildpost', $project);
+            } else if ($projectData['image'] === 'fymi.png') {
+                $this->addReference('project_fymi', $project);
             }
             $manager->persist($project);
         }
