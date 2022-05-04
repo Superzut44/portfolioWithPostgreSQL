@@ -51,7 +51,7 @@ class ToolFixtures extends Fixture
         ],
         [
             'name' => 'Codepen',
-            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codepen/codepen-original-wordmark.svg',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codepen/codepen-plain.svg',
         ],
         [
             'name' => 'FileZilla',

@@ -46,6 +46,15 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'languages' => ['HTML', 'CSS'],
             'tools' => ['Git', 'Visual Studio Code', 'Linux']
         ],
+        [
+            'name' => 'School schedule',
+            'description' => "Création d'un emploi du temps scolaire (début septembre 2020) avec coloration du programme de la journée, qui varie en fonction des semaines A ou B.",
+            'image' => 'school-schedule.jpg',
+            'link' => 'https://school-schedule.chavaudreyxavier.fr',
+            'github' => 'https://github.com/Superzut44/school-schedule',
+            'languages' => ['HTML', 'CSS', 'Javascript'],
+            'tools' => ['Codepen']
+        ],
     ];
 
     public function load(ObjectManager $manager): void
@@ -72,6 +81,8 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
                 $this->addReference('project_wildpost', $project);
             } else if ($projectData['image'] === 'fymi.png') {
                 $this->addReference('project_fymi', $project);
+            } else if ($projectData['image'] === 'school-schedule.jpg') {
+                $this->addReference('project_school-schedule', $project);
             }
             $manager->persist($project);
         }

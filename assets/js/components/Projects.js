@@ -58,19 +58,19 @@ export default function Projects() {
                                 : "" }
                             { project.github ?
                                 <a href={project.github} target="_blank">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" width="30" height="30"/>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" width="40" height="40"/>
                                 </a>
                                 : ""
                             }
                         </Card.Body>
                         <Card.Footer>
                             {project.languages.map((language, idx) => (
-                                <img key={idx} src={ language.image } alt={ language.name } width="30" height="30"/>
+                                <img key={idx} src={ language.image } alt={ language.name } width="40" height="40"/>
                             ))}
                         </Card.Footer>
                         <Card.Footer>
                         {project.tools.map((tool, idx) => (
-                                <img key={idx} src={ tool.image } alt={ tool.name } width="30" height="30"/>
+                                <img key={idx} src={ tool.image } alt={ tool.name } width="40" height="40"/>
                             ))}
                         </Card.Footer>
                     </Card>
