@@ -17,7 +17,8 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'link' => 'https://marcheconclu.chavaudreyxavier.fr',
             'github' => 'https://github.com/Superzut44/marche-conclu',
             'languages' => ['HTML', 'CSS', 'PHP', 'Javascript'],
-            'tools' => ['Symfony', 'Sass', 'Bootstrap', 'MySQL', 'Composer', 'Git', 'Visual Studio Code', 'Linux']
+            'tools' => ['Symfony', 'Sass', 'Bootstrap', 'MySQL', 'Composer', 'Git', 'Visual Studio Code', 'Linux'],
+            'screenReference' => 'project_marcheconclu'
         ],
         [
             'name' => 'Fymi',
@@ -26,7 +27,8 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'link' => 'https://fymi.chavaudreyxavier.fr',
             'github' => 'https://github.com/Superzut44/fymi',
             'languages' => ['HTML', 'CSS', 'PHP'],
-            'tools' => ['Symfony', 'MySQL', 'Git', 'Visual Studio Code', 'Linux']
+            'tools' => ['Symfony', 'MySQL', 'Git', 'Visual Studio Code', 'Linux'],
+            'screenReference' => 'project_fymi'
         ],
         [
             'name' => 'Unlock',
@@ -35,7 +37,8 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'link' => 'https://unlock.labetowiez.fr',
             'github' => 'https://github.com/Superzut44/unlock',
             'languages' => ['HTML', 'CSS', 'PHP'],
-            'tools' => ['Symfony', 'MySQL', 'Git', 'Visual Studio Code', 'Linux']
+            'tools' => ['Symfony', 'MySQL', 'Git', 'Visual Studio Code', 'Linux'],
+            'screenReference' => 'project_unlock'
         ],
         [
             'name' => 'Wild Post',
@@ -44,7 +47,8 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'link' => 'https://wildpost.chavaudreyxavier.fr',
             'github' => 'https://github.com/Superzut44/Wild-Post',
             'languages' => ['HTML', 'CSS'],
-            'tools' => ['Git', 'Visual Studio Code', 'Linux']
+            'tools' => ['Git', 'Visual Studio Code', 'Linux'],
+            'screenReference' => 'project_wildpost'
         ],
         [
             'name' => 'School schedule',
@@ -53,7 +57,18 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'link' => 'https://school-schedule.chavaudreyxavier.fr',
             'github' => 'https://github.com/Superzut44/school-schedule',
             'languages' => ['HTML', 'CSS', 'Javascript'],
-            'tools' => ['Codepen']
+            'tools' => ['Codepen'],
+            'screenReference' => 'project_school-schedule'
+        ],
+        [
+            'name' => 'Angular',
+            'description' => "Mon premier projet Angular.",
+            'image' => 'angular.jpg',
+            'link' => 'https://myfirstappangular.chavaudreyxavier.fr',
+            'github' => 'https://github.com/Superzut44/MyFirstAppAngular',
+            'languages' => ['HTML', 'CSS', 'Javascript', 'TypeScript'],
+            'tools' => ['Angular', 'Node.js'],
+            'screenReference' => 'project_angular'
         ],
     ];
 
@@ -73,17 +88,8 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             foreach ($projectData['tools'] as $toolData) {
                 $project->addTool($this->getReference('tool_' . $toolData));
             };
-             if ($projectData['image'] === 'marcheconclu.png') {
-                $this->addReference('project_marcheconclu', $project);
-            } else if ($projectData['image'] === 'unlock.jpg') {
-                $this->addReference('project_unlock', $project);
-            } else if ($projectData['image'] === 'wild-post.jpg') {
-                $this->addReference('project_wildpost', $project);
-            } else if ($projectData['image'] === 'fymi.png') {
-                $this->addReference('project_fymi', $project);
-            } else if ($projectData['image'] === 'school-schedule.jpg') {
-                $this->addReference('project_school-schedule', $project);
-            }
+            $this->addReference($projectData['screenReference'], $project);
+
             $manager->persist($project);
         }
 

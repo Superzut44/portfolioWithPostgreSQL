@@ -90,16 +90,12 @@ class ToolFixtures extends Fixture
             'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg',
         ],
         [
-            'name' => 'AngularJS',
-            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original-wordmark.svg',
-        ],
-        [
             'name' => 'Laravel',
             'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg',
         ],
         [
             'name' => 'Node.js',
-            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
         ],
         [
             'name' => 'PostgreSQL',

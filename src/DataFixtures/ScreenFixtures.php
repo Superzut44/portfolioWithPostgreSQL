@@ -25,6 +25,7 @@ class ScreenFixtures extends Fixture implements DependentFixtureInterface
         $screen->addProject($this->getReference('project_unlock'));
         $screen->addProject($this->getReference('project_wildpost'));
         $screen->addProject($this->getReference('project_school-schedule'));
+        $screen->addProject($this->getReference('project_angular'));
         $manager->persist($screen);
 
         $screen = new Screen();
