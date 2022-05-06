@@ -50,6 +50,9 @@ class Project
     #[Groups("project:read")]
     private $link;
 
+    #[ORM\Column(type: 'datetime_immutable')]
+    private $startThe;
+
     public function __construct()
     {
         $this->languages = new ArrayCollection();
@@ -179,6 +182,18 @@ class Project
     public function setScreen(?Screen $screen): self
     {
         $this->screen = $screen;
+
+        return $this;
+    }
+
+    public function getStartThe(): ?\DateTimeImmutable
+    {
+        return $this->startThe;
+    }
+
+    public function setStartThe(\DateTimeImmutable $startThe): self
+    {
+        $this->startThe = $startThe;
 
         return $this;
     }

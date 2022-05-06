@@ -23,7 +23,7 @@ export default function Projects() {
 
     useEffect(() => {
         axios
-        .get(`projects/api`)
+        .get(`projects/orderByEnd`)
         .then((resp) => {
             setProjects(resp.data);
         });

@@ -2,6 +2,7 @@
 
 namespace App\DataFixtures;
 
+use DateTimeImmutable;
 use App\Entity\Project;
 use Doctrine\Persistence\ObjectManager;
 use Doctrine\Bundle\FixturesBundle\Fixture;
@@ -18,7 +19,8 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'github' => 'https://github.com/Superzut44/marche-conclu',
             'languages' => ['HTML', 'CSS', 'PHP', 'Javascript'],
             'tools' => ['Symfony', 'Sass', 'Bootstrap', 'MySQL', 'Composer', 'Git', 'Visual Studio Code', 'Linux'],
-            'screenReference' => 'project_marcheconclu'
+            'screenReference' => 'project_marcheconclu',
+            'startThe' => '07-12-2021'
         ],
         [
             'name' => 'Fymi',
@@ -28,7 +30,8 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'github' => 'https://github.com/Superzut44/fymi',
             'languages' => ['HTML', 'CSS', 'PHP'],
             'tools' => ['Symfony', 'MySQL', 'Git', 'Visual Studio Code', 'Linux'],
-            'screenReference' => 'project_fymi'
+            'screenReference' => 'project_fymi',
+            'startThe' => '25-11-2021'
         ],
         [
             'name' => 'Unlock',
@@ -38,7 +41,8 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'github' => 'https://github.com/Superzut44/unlock',
             'languages' => ['HTML', 'CSS', 'PHP'],
             'tools' => ['Symfony', 'MySQL', 'Git', 'Visual Studio Code', 'Linux'],
-            'screenReference' => 'project_unlock'
+            'screenReference' => 'project_unlock',
+            'startThe' => '26-10-2021'
         ],
         [
             'name' => 'Wild Post',
@@ -48,7 +52,8 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'github' => 'https://github.com/Superzut44/Wild-Post',
             'languages' => ['HTML', 'CSS'],
             'tools' => ['Git', 'Visual Studio Code', 'Linux'],
-            'screenReference' => 'project_wildpost'
+            'screenReference' => 'project_wildpost',
+            'startThe' => '29-09-2021'
         ],
         [
             'name' => 'School schedule',
@@ -58,7 +63,8 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'github' => 'https://github.com/Superzut44/school-schedule',
             'languages' => ['HTML', 'CSS', 'Javascript'],
             'tools' => ['Codepen'],
-            'screenReference' => 'project_school-schedule'
+            'screenReference' => 'project_school-schedule',
+            'startThe' => '04-09-2020'
         ],
         [
             'name' => 'Angular',
@@ -68,7 +74,8 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'github' => 'https://github.com/Superzut44/MyFirstAppAngular',
             'languages' => ['HTML', 'CSS', 'Javascript', 'TypeScript'],
             'tools' => ['Angular', 'Node.js'],
-            'screenReference' => 'project_angular'
+            'screenReference' => 'project_angular',
+            'startThe' => '05-05-2022'
         ],
     ];
 
@@ -89,6 +96,7 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
                 $project->addTool($this->getReference('tool_' . $toolData));
             };
             $this->addReference($projectData['screenReference'], $project);
+            $project->setStartThe(new DateTimeImmutable($projectData['startThe']));
 
             $manager->persist($project);
         }

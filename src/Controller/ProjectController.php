@@ -20,6 +20,12 @@ class ProjectController extends AbstractController
         return $this->json($projectRepository->findAll(), 200,[], ['groups' => 'project:read']);
     }
 
+    #[Route('s/orderByEnd', name: 'projects_orderByStart', methods: ['GET'])]
+    public function orderByStart(ProjectRepository $projectRepository): Response
+    {
+        return $this->json($projectRepository->findBy([],['startThe' => 'DESC']), 200,[], ['groups' => 'project:read']);
+    }
+
     #[Route('/index', name: 'app_project_index', methods: ['GET'])]
     public function index(ProjectRepository $projectRepository): Response
     {
