@@ -72,7 +72,7 @@ export default function AboutMe() {
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="Bootstrap" width="50" height="50"/>
                     </div>
                     <div>
-                        <h5>Langage C, HTML, CSS puis Javascript</h5>
+                        <h5>Langages C, HTML, CSS puis Javascript</h5>
                         <h6>Autodidacte avec les livres Edition ENI, et avec les cours en ligne OpenClassrooms</h6>
                         <p>de mai 2019 à février 2021</p>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" width="50" height="50"/>

@@ -11,7 +11,6 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
-#[IsGranted('ROLE_ADMIN')]
 #[Route('/screen')]
 class ScreenController extends AbstractController
 {
@@ -23,6 +22,7 @@ class ScreenController extends AbstractController
         ]);
     }
 
+    #[IsGranted('ROLE_ADMIN')]
     #[Route('/new', name: 'app_screen_new', methods: ['GET', 'POST'])]
     public function new(Request $request, ScreenRepository $screenRepository): Response
     {
@@ -49,6 +49,7 @@ class ScreenController extends AbstractController
         ]);
     }
 
+    #[IsGranted('ROLE_ADMIN')]
     #[Route('/{id}/edit', name: 'app_screen_edit', methods: ['GET', 'POST'])]
     public function edit(Request $request, Screen $screen, ScreenRepository $screenRepository): Response
     {
@@ -66,6 +67,7 @@ class ScreenController extends AbstractController
         ]);
     }
 
+    #[IsGranted('ROLE_ADMIN')]
     #[Route('/{id}', name: 'app_screen_delete', methods: ['POST'])]
     public function delete(Request $request, Screen $screen, ScreenRepository $screenRepository): Response
     {
