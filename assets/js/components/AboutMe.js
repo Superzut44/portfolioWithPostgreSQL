@@ -41,7 +41,7 @@ export default function AboutMe() {
                     <h2>Formations</h2>
                     <div>
                         <h5>Langage TypeScript et le framework Angular </h5>
-                        <h6>Autodidacte avec les cours offert par la Wild Code School</h6>
+                        <h6>Autodidacte avec les cours offerts par la Wild Code School</h6>
                         <p>depuis mai 2019 et en cours</p>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="50" height="50"/>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" width="50" height="50"/>

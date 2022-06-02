@@ -68,12 +68,12 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
         ],
         [
             'name' => 'Angular',
-            'description' => "Mon premier projet Angular.",
+            'description' => "Projet Angular d'apprentissage avec les cours de Will Alexander.",
             'image' => 'angular.jpg',
-            'link' => 'https://myfirstappangular.chavaudreyxavier.fr',
-            'github' => 'https://github.com/Superzut44/MyFirstAppAngular',
+            'link' => 'https://mon-projet-angular-with-will-alexander.chavaudreyxavier.fr/',
+            'github' => 'https://github.com/Superzut44/mon-projet-angular-with-Will-Alexander',
             'languages' => ['HTML', 'CSS', 'Javascript', 'TypeScript'],
-            'tools' => ['Angular', 'Node.js'],
+            'tools' => ['Angular', 'Node.js','Firebase'],
             'screenReference' => 'project_angular',
             'startThe' => '05-05-2022'
         ],

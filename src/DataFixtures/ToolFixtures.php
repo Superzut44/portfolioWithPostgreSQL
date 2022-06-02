@@ -117,6 +117,10 @@ class ToolFixtures extends Fixture
             'name' => 'Doctrine',
             'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/doctrine/doctrine-original-wordmark.svg',
         ],
+        [
+            'name' => 'Firebase',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
+        ],
     ];
 
     public function load(ObjectManager $manager): void
