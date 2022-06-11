@@ -2,7 +2,7 @@
 
 namespace App\DataFixtures;
 
-use DateTimeImmutable;
+use DateTime;
 use App\Entity\Project;
 use Doctrine\Persistence\ObjectManager;
 use Doctrine\Bundle\FixturesBundle\Fixture;
@@ -68,7 +68,7 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
         ],
         [
             'name' => 'Angular',
-            'description' => "Projet Angular d'apprentissage avec les cours de Will Alexander.",
+            'description' => "Projet Angular d'apprentissage avec les cours de Will Alexander (du 5 mai au 3 juin 2021).",
             'image' => 'angular.jpg',
             'link' => 'https://mon-projet-angular-with-will-alexander.chavaudreyxavier.fr/',
             'github' => 'https://github.com/Superzut44/mon-projet-angular-with-Will-Alexander',
@@ -76,6 +76,17 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'tools' => ['Angular', 'Node.js','Firebase'],
             'screenReference' => 'project_angular',
             'startThe' => '05-05-2022'
+        ],
+        [
+            'name' => 'Angular error shelves',
+            'description' => "Mémento des problèmes rencontrés lors de la réalisation de mes projets Angular (depuis le 6 juin 2021).",
+            'image' => 'angularerrorshelves.jpg',
+            'link' => 'https://errorshelves.chavaudreyxavier.fr/',
+            'github' => 'https://github.com/Superzut44/errorshelves',
+            'languages' => ['HTML', 'CSS', 'Javascript', 'TypeScript'],
+            'tools' => ['Angular', 'Node.js','Firebase'],
+            'screenReference' => 'project_angular-error-shelves',
+            'startThe' => '03-06-2022'
         ],
     ];
 
@@ -96,7 +107,7 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
                 $project->addTool($this->getReference('tool_' . $toolData));
             };
             $this->addReference($projectData['screenReference'], $project);
-            $project->setStartThe(new DateTimeImmutable($projectData['startThe']));
+            $project->setStartThe(new DateTime($projectData['startThe']));
 
             $manager->persist($project);
         }

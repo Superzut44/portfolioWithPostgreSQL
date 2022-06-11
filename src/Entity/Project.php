@@ -2,10 +2,11 @@
 
 namespace App\Entity;
 
-use App\Repository\ProjectRepository;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
+use DateTime;
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\ProjectRepository;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -50,7 +51,7 @@ class Project
     #[Groups("project:read")]
     private $link;
 
-    #[ORM\Column(type: 'datetime_immutable')]
+    #[ORM\Column(type: 'datetime')]
     private $startThe;
 
     public function __construct()
@@ -186,12 +187,12 @@ class Project
         return $this;
     }
 
-    public function getStartThe(): ?\DateTimeImmutable
+    public function getStartThe(): ?DateTime
     {
         return $this->startThe;
     }
 
-    public function setStartThe(\DateTimeImmutable $startThe): self
+    public function setStartThe(\DateTime $startThe): self
     {
         $this->startThe = $startThe;
 
