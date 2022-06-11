@@ -68,7 +68,7 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
         ],
         [
             'name' => 'Angular',
-            'description' => "Projet Angular d'apprentissage avec les cours de Will Alexander (du 5 mai au 3 juin 2021).",
+            'description' => "Projet Angular d'apprentissage avec les cours de Will Alexander (du 5 mai au 3 juin 2022).",
             'image' => 'angular.jpg',
             'link' => 'https://mon-projet-angular-with-will-alexander.chavaudreyxavier.fr/',
             'github' => 'https://github.com/Superzut44/mon-projet-angular-with-Will-Alexander',
@@ -79,7 +79,7 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
         ],
         [
             'name' => 'Angular error shelves',
-            'description' => "Mémento des problèmes rencontrés lors de la réalisation de mes projets Angular (depuis le 6 juin 2021).",
+            'description' => "Mémento des problèmes rencontrés lors de la réalisation de mes projets Angular (depuis le 6 juin 2022).",
             'image' => 'angularerrorshelves.jpg',
             'link' => 'https://errorshelves.chavaudreyxavier.fr/',
             'github' => 'https://github.com/Superzut44/errorshelves',
