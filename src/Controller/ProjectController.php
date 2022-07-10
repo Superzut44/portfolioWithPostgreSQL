@@ -14,13 +14,13 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 #[Route('/project')]
 class ProjectController extends AbstractController
 {
-    #[Route('s/api', name: 'projects_api', methods: ['GET'])]
+    #[Route('/api', name: 'projects_api', methods: ['GET'])]
     public function getProjects(ProjectRepository $projectRepository): Response
     {
         return $this->json($projectRepository->findAll(), 200,[], ['groups' => 'project:read']);
     }
 
-    #[Route('s/orderByEnd', name: 'projects_orderByStart', methods: ['GET'])]
+    #[Route('/orderByEnd', name: 'projects_orderByStart', methods: ['GET'])]
     public function orderByStart(ProjectRepository $projectRepository): Response
     {
         return $this->json($projectRepository->findBy([],['startThe' => 'DESC']), 200,[], ['groups' => 'project:read']);

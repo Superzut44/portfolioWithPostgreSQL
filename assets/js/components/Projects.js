@@ -2,19 +2,12 @@ import React, { useState, useEffect } from "react";
 // https://create-react-app.dev/docs/adding-images-fonts-and-files/
 // https://pixabay.com/
 import cloud from '../../images/cloud.jpg';
-
 // npm install react-bootstrap bootstrap@5.1.3
 // composer install && composer update
 import { } from 'react-bootstrap';
-
 import { useMediaQuery } from 'react-responsive'
-
 import { Card, Button } from 'react-bootstrap';
-
 import axios from "axios";
-
-
-// console.log(mobile); // /logo.84287d09.png
 
 export default function Projects() {
 
@@ -23,7 +16,7 @@ export default function Projects() {
 
     useEffect(() => {
         axios
-        .get(`projects/orderByEnd`)
+        .get(`project/orderByEnd`)
         .then((resp) => {
             setProjects(resp.data);
         });
@@ -77,7 +70,6 @@ export default function Projects() {
                     ))}
                 </div>
             </div>
-        </div>
-       
+        </div> 
     )
 }
