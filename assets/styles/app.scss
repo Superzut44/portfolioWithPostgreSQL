@@ -296,6 +296,33 @@ body{
     justify-content: space-evenly;
 }
 
+.card_logo_image_span{
+    display: none;
+}
+
+.card_logo_image{
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.card_logo_image_a:hover{
+    position: relative;
+    margin: 0 5px;
+    .card_logo_image{
+        opacity: 0.2;
+        width: 80px;
+        height: 80px;
+        transform: rotate(360deg);
+    }
+    .card_logo_image_span{
+        opacity: 1;
+        display: initial;
+        position: absolute;
+        top: 50%; left: 50%; /* à 50%/50% du parent référent */
+        transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+        font-size: large;
+    }
+}
+
 // cards end
 
 // about me start
