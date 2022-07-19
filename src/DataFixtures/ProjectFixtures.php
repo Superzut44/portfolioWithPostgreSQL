@@ -13,7 +13,9 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
     public const PROJECTS = [
         [
             'name' => 'Marché Conclu',
-            'description' => "Projet de création (du  1 décembre 2021 au 11 février 2022) d'un site Marché Conclu pour une cliente, en version mobile, réalisé en équipe à l'école Wild Code School de Reims.",
+            'description' => "Projet de création (du  1 décembre 2021 au 11 février 2022) 
+                d'un site Marché Conclu pour une cliente, en version mobile, 
+                réalisé en équipe à l'école Wild Code School de Reims.",
             'image' => 'marcheconclu.png',
             'link' => 'https://marcheconclu.chavaudreyxavier.fr',
             'github' => 'https://github.com/Superzut44/marche-conclu',
@@ -24,7 +26,8 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
         ],
         [
             'name' => 'Fymi',
-            'description' => "Hackaton sur le thème de la musique, réalisé en équipe et en version mobile (le 25 et 26 novembre 2021).",
+            'description' => "Hackaton sur le thème de la musique, 
+                réalisé en équipe et en version mobile (le 25 et 26 novembre 2021).",
             'image' => 'fymi.png',
             'link' => 'https://fymi.chavaudreyxavier.fr',
             'github' => 'https://github.com/Superzut44/fymi',
@@ -35,7 +38,8 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
         ],
         [
             'name' => 'Unlock',
-            'description' => "Projet de création (du  21 oct au 13 nov 2021) d'un site fictif de type jeu : escape game ( Unlock! Sherlock adventures ), réalisé en équipe à l'école Wild Code School de Reims.",
+            'description' => "Projet de création (du  21 oct au 13 nov 2021) d'un site fictif de type jeu : 
+                escape game ( Unlock! Sherlock adventures ), réalisé en équipe à l'école Wild Code School de Reims.",
             'image' => 'unlock.jpg',
             'link' => 'https://unlock.labetowiez.fr',
             'github' => 'https://github.com/Superzut44/unlock',
@@ -46,7 +50,8 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
         ],
         [
             'name' => 'Wild Post',
-            'description' => "Création en équipe (du  28 sept au 8 oct 2021) d'un site fictif de type journal sur l'école Wild Code School de Reims.",
+            'description' => "Création en équipe (du  28 sept au 8 oct 2021) 
+                d'un site fictif de type journal sur l'école Wild Code School de Reims.",
             'image' => 'wild-post.jpg',
             'link' => 'https://wildpost.chavaudreyxavier.fr',
             'github' => 'https://github.com/Superzut44/Wild-Post',
@@ -57,7 +62,8 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
         ],
         [
             'name' => 'School schedule',
-            'description' => "Création d'un emploi du temps scolaire (début septembre 2020) avec coloration du programme de la journée, qui varie en fonction des semaines A ou B.",
+            'description' => "Création d'un emploi du temps scolaire (début septembre 2020) 
+                avec coloration du programme de la journée, qui varie en fonction des semaines A ou B.",
             'image' => 'school-schedule.jpg',
             'link' => 'https://school-schedule.chavaudreyxavier.fr',
             'github' => 'https://github.com/Superzut44/school-schedule',
@@ -68,7 +74,8 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
         ],
         [
             'name' => 'Angular',
-            'description' => "Projet Angular d'apprentissage avec les cours de Will Alexander (du 5 mai au 3 juin 2022).",
+            'description' => "Projet Angular d'apprentissage avec les cours de Will Alexander 
+                (du 5 mai au 3 juin 2022).",
             'image' => 'angular.jpg',
             'link' => 'https://mon-projet-angular-with-will-alexander.chavaudreyxavier.fr/',
             'github' => 'https://github.com/Superzut44/mon-projet-angular-with-Will-Alexander',
@@ -79,7 +86,8 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
         ],
         [
             'name' => 'Angular error shelves',
-            'description' => "Mémento des problèmes rencontrés lors de la réalisation de mes projets Angular (depuis le 6 juin 2022).",
+            'description' => "Mémento des problèmes rencontrés lors de la réalisation 
+                de mes projets Angular (depuis le 6 juin 2022).",
             'image' => 'angularerrorshelves.jpg',
             'link' => 'https://errorshelves.chavaudreyxavier.fr/',
             'github' => 'https://github.com/Superzut44/errorshelves',

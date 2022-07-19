@@ -11,8 +11,11 @@ class DefaultController extends AbstractController
     #[Route('/{reactRouting}', name: 'home', defaults: ["reactRouting" => null])]
     public function index(): Response
     {
-        return $this->render('default/index.html.twig', [
+        return $this->render(
+            'default/index.html.twig',
+            [
             'controller_name' => 'Xav',
-        ]);
+            ]
+        );
     }
 }

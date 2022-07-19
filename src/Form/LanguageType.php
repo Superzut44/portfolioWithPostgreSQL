@@ -13,14 +13,15 @@ class LanguageType extends AbstractType
     {
         $builder
             ->add('name')
-            ->add('image')
-        ;
+            ->add('image');
     }
 
     public function configureOptions(OptionsResolver $resolver): void
     {
-        $resolver->setDefaults([
+        $resolver->setDefaults(
+            [
             'data_class' => Language::class,
-        ]);
+            ]
+        );
     }
 }

@@ -18,30 +18,47 @@ class ProjectType extends AbstractType
             ->add('image')
             ->add('github')
             ->add('link')
-            ->add('languages', null, [
+            ->add(
+                'languages',
+                null,
+                [
                 'choice_label' => 'name',
                 'required'      => true,
                 'multiple' => true
-                ])
-            ->add('tools', null, [
+                ]
+            )
+            ->add(
+                'tools',
+                null,
+                [
                 'choice_label' => 'name',
                 'required'      => true,
                 'multiple' => true
-                ])
-            ->add('screen', null, [
+                ]
+            )
+            ->add(
+                'screen',
+                null,
+                [
                 'choice_label' => 'name',
                 'required'      => true
-                ])
-            ->add('startThe', DateType::class, [
+                ]
+            )
+            ->add(
+                'startThe',
+                DateType::class,
+                [
                 'format' => 'yyyy-MM-dd'
-                ])
-        ;
+                ]
+            );
     }
 
     public function configureOptions(OptionsResolver $resolver): void
     {
-        $resolver->setDefaults([
+        $resolver->setDefaults(
+            [
             'data_class' => Project::class,
-        ]);
+            ]
+        );
     }
 }

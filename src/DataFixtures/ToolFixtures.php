@@ -130,7 +130,7 @@ class ToolFixtures extends Fixture
             $tool->setName($toolData['name']);
             $tool->setImage($toolData['image']);
             $this->addReference('tool_' . $toolData['name'], $tool);
-            
+
             $manager->persist($tool);
         }
 

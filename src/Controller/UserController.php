@@ -22,9 +22,12 @@ class UserController extends AbstractController
     #[Route('/index', name: 'app_user_index', methods: ['GET'])]
     public function index(UserRepository $userRepository): Response
     {
-        return $this->render('user/index.html.twig', [
+        return $this->render(
+            'user/index.html.twig',
+            [
             'users' => $userRepository->findAll(),
-        ]);
+            ]
+        );
     }
 
     // #[Route('/new', name: 'app_user_new', methods: ['GET', 'POST'])]
@@ -49,9 +52,12 @@ class UserController extends AbstractController
     #[Route('/{id}', name: 'app_user_show', methods: ['GET'])]
     public function show(User $user): Response
     {
-        return $this->render('user/show.html.twig', [
+        return $this->render(
+            'user/show.html.twig',
+            [
             'user' => $user,
-        ]);
+            ]
+        );
     }
 
     #[IsGranted('ROLE_ADMIN')]
@@ -69,10 +75,12 @@ class UserController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             try {
                 $user->setPassword(
-                    strval($userPasswordHasher->hashPassword(
-                        $user,
-                        strval($form->get('password')->getData())
-                    )),
+                    strval(
+                        $userPasswordHasher->hashPassword(
+                            $user,
+                            strval($form->get('password')->getData())
+                        )
+                    ),
                 );
                 $entityManager->persist($user);
                 $entityManager->flush();
@@ -84,10 +92,13 @@ class UserController extends AbstractController
             }
         }
 
-        return $this->renderForm('user/edit.html.twig', [
+        return $this->renderForm(
+            'user/edit.html.twig',
+            [
             'user' => $user,
             'form' => $form,
-        ]);
+            ]
+        );
     }
 
     // #[Route('/{id}', name: 'app_user_delete', methods: ['POST'])]

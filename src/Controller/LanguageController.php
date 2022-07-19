@@ -17,9 +17,12 @@ class LanguageController extends AbstractController
     #[Route('/index', name: 'app_language_index', methods: ['GET'])]
     public function index(LanguageRepository $languageRepository): Response
     {
-        return $this->render('language/index.html.twig', [
+        return $this->render(
+            'language/index.html.twig',
+            [
             'languages' => $languageRepository->findAll(),
-        ]);
+            ]
+        );
     }
 
     #[IsGranted('ROLE_ADMIN')]
@@ -35,18 +38,24 @@ class LanguageController extends AbstractController
             return $this->redirectToRoute('app_language_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('language/new.html.twig', [
+        return $this->renderForm(
+            'language/new.html.twig',
+            [
             'language' => $language,
             'form' => $form,
-        ]);
+            ]
+        );
     }
 
     #[Route('/{id}', name: 'app_language_show', methods: ['GET'])]
     public function show(Language $language): Response
     {
-        return $this->render('language/show.html.twig', [
+        return $this->render(
+            'language/show.html.twig',
+            [
             'language' => $language,
-        ]);
+            ]
+        );
     }
 
     #[IsGranted('ROLE_ADMIN')]
@@ -61,17 +70,20 @@ class LanguageController extends AbstractController
             return $this->redirectToRoute('app_language_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('language/edit.html.twig', [
+        return $this->renderForm(
+            'language/edit.html.twig',
+            [
             'language' => $language,
             'form' => $form,
-        ]);
+            ]
+        );
     }
 
     #[IsGranted('ROLE_ADMIN')]
     #[Route('/{id}', name: 'app_language_delete', methods: ['POST'])]
     public function delete(Request $request, Language $language, LanguageRepository $languageRepository): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$language->getId(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $language->getId(), $request->request->get('_token'))) {
             $languageRepository->remove($language);
         }
 

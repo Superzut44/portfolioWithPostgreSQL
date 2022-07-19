@@ -17,20 +17,22 @@ class ProjectController extends AbstractController
     #[Route('/api', name: 'projects_api', methods: ['GET'])]
     public function getProjects(ProjectRepository $projectRepository): Response
     {
-        return $this->json($projectRepository->findAll(), 200,[], ['groups' => 'project:read']);
+        return $this->json($projectRepository->findAll(), 200, [], ['groups' => 'project:read']);
     }
 
     #[Route('/orderByEnd', name: 'projects_orderByStart', methods: ['GET'])]
     public function orderByStart(ProjectRepository $projectRepository): Response
     {
-        return $this->json($projectRepository->findBy([],['startThe' => 'DESC']), 200,[], ['groups' => 'project:read']);
+        return $this->json($projectRepository->findBy([], ['startThe' => 'DESC']), 200, [], [
+            'groups' => 'project:read']);
     }
 
     #[Route('/index', name: 'app_project_index', methods: ['GET'])]
     public function index(ProjectRepository $projectRepository): Response
     {
         return $this->render(
-            'project/index.html.twig', [
+            'project/index.html.twig',
+            [
             'projects' => $projectRepository->findAll(),
             ]
         );
@@ -49,18 +51,24 @@ class ProjectController extends AbstractController
             return $this->redirectToRoute('app_project_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('project/new.html.twig', [
+        return $this->renderForm(
+            'project/new.html.twig',
+            [
             'project' => $project,
             'form' => $form,
-        ]);
+            ]
+        );
     }
 
     #[Route('/{id}', name: 'app_project_show', methods: ['GET'])]
     public function show(Project $project): Response
     {
-        return $this->render('project/show.html.twig', [
+        return $this->render(
+            'project/show.html.twig',
+            [
             'project' => $project,
-        ]);
+            ]
+        );
     }
 
     #[IsGranted('ROLE_ADMIN')]
@@ -75,17 +83,20 @@ class ProjectController extends AbstractController
             return $this->redirectToRoute('app_project_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('project/edit.html.twig', [
+        return $this->renderForm(
+            'project/edit.html.twig',
+            [
             'project' => $project,
             'form' => $form,
-        ]);
+            ]
+        );
     }
 
     #[IsGranted('ROLE_ADMIN')]
     #[Route('/{id}', name: 'app_project_delete', methods: ['POST'])]
     public function delete(Request $request, Project $project, ProjectRepository $projectRepository): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$project->getId(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $project->getId(), $request->request->get('_token'))) {
             $projectRepository->remove($project);
         }
 
