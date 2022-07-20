@@ -9,7 +9,7 @@ export default function AboutMe() {
             <section className='aboutme-section'>
                 <header>
                     <a href="https://github.com/Superzut44" target="_blank">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github" width="60" height="60"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="60" height="60"/>
                     </a>
                     <a href="https://www.linkedin.com/in/xavier-chavaudrey-297834221/" target="_blank">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="Linkedin" width="60" height="60"/>
@@ -83,8 +83,8 @@ export default function AboutMe() {
                             <span className="aboutme_logo_image_span">Git</span>
                         </a>
                         <a className="aboutme_logo_image_a">
-                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github" width="50" height="50"/>
-                            <span className="aboutme_logo_image_span">Github</span>
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">GitHub</span>
                         </a>
                         <a className="aboutme_logo_image_a">
                             <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" width="50" height="50"/>
@@ -99,7 +99,7 @@ export default function AboutMe() {
                             <span className="aboutme_logo_image_span">Composer</span>
                         </a>
                         <a className="aboutme_logo_image_a">
-                            <img className="aboutme_logo_image" src="http://naolis.com/portail/wp-content/uploads/2014/12/twig-logo.png" alt="Twig" width="50" height="50"/>
+                            <img className="aboutme_logo_image" src="https://www.drupal.org/files/project-images/logo_184.png" alt="Twig" width="50" height="50"/>
                             <span className="aboutme_logo_image_span">Twig</span>
                         </a>
                         <a className="aboutme_logo_image_a">
