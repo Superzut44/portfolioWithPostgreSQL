@@ -58,18 +58,18 @@ export default function Projects() {
                         </Card.Body>
                         <Card.Footer>
                             {project.languages.map((language, idx) => (
-                                <a className="card_logo_image_a">
-                                <img key={idx} className="card_logo_image" src={ language.image } alt={ language.name } width="40" height="40"/>
-                                <span className="card_logo_image_span">{ language.name }</span>
-                            </a>
+                                <a key={idx} className="card_logo_image_a">
+                                    <img className="card_logo_image" src={ language.image } alt={ language.name } width="40" height="40"/>
+                                    <span className="card_logo_image_span">{ language.name }</span>
+                                </a>
                             ))}
                         </Card.Footer>
                         <Card.Footer>
-                        {project.tools.map((tool, idx) => (
-                            <a className="card_logo_image_a">
-                                <img key={idx} className="card_logo_image" src={ tool.image } alt={ tool.name } width="40" height="40"/>
-                                <span className="card_logo_image_span">{ tool.name }</span>
-                            </a>
+                            {project.tools.map((tool, idx) => (
+                                <a key={idx} className="card_logo_image_a">
+                                    <img className="card_logo_image" src={ tool.image } alt={ tool.name } width="40" height="40"/>
+                                    <span className="card_logo_image_span">{ tool.name }</span>
+                                </a>
                             ))}
                         </Card.Footer>
                     </Card>

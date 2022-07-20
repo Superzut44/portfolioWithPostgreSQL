@@ -43,42 +43,110 @@ export default function AboutMe() {
                         <h5>Langage TypeScript et le framework Angular </h5>
                         <h6>Autodidacte avec les cours offerts par la Wild Code School</h6>
                         <p>depuis mai 2022 et en cours</p>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="50" height="50"/>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" width="50" height="50"/>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">TypeScript</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">Angular</span>
+                        </a>
                     </div>
                     <div>
                         <h5>Library React, puis intégration de celle-ci au framework Symfony</h5>
                         <h6>Gaea21 à Lancy, Suisse</h6>
                         <h6>Formation au début du stage puis mise en application sur leur site</h6>
                         <p>de février à mars 2022</p>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="React" width="50" height="50"/>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original-wordmark.svg" alt="Symfony" width="50" height="50"/>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="React" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">React</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original-wordmark.svg" alt="Symfony" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">Symfony</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">GitLab</span>
+                        </a>
                     </div>
                     <div>
                         <h5>Formation "Développeur web et web mobile" &nbsp;PHP/Symfony</h5>
                         <h6>Wild Code School à REIMS (51)</h6>
                         <p>de septembre 2021 à février 2022</p>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" width="50" height="50"/>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" alt="Git" width="50" height="50"/>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" width="50" height="50"/>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original-wordmark.svg" alt="Symfony" width="50" height="50"/>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" alt="Composer" width="50" height="50"/>
-                        <img src="http://naolis.com/portail/wp-content/uploads/2014/12/twig-logo.png" alt="Twig" width="50" height="50"/>
-                        <img src="https://azure.microsoft.com/en-us/patterns/styles/glyphs-icons/azure-sql-database.svg" alt="SQL" width="50" height="50"/>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="50" height="50"/>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/doctrine/doctrine-original-wordmark.svg" alt="Doctrine" width="50" height="50"/>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Javascript" width="50" height="50"/>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" width="50" height="50"/>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="Bootstrap" width="50" height="50"/>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">Linux</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" alt="Git" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">Git</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">Github</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">PHP</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original-wordmark.svg" alt="Symfony" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">Symfony</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" alt="Composer" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">Composer</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="http://naolis.com/portail/wp-content/uploads/2014/12/twig-logo.png" alt="Twig" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">Twig</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://azure.microsoft.com/en-us/patterns/styles/glyphs-icons/azure-sql-database.svg" alt="SQL" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">SQL</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">MySQL</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/doctrine/doctrine-original-wordmark.svg" alt="Doctrine" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">Doctrine</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Javascript" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">Javascript</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">Sass</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="Bootstrap" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">Bootstrap</span>
+                        </a>
                     </div>
                     <div>
                         <h5>Langages C, HTML, CSS puis Javascript</h5>
                         <h6>Autodidacte avec les livres Edition ENI, et avec les cours en ligne OpenClassrooms</h6>
                         <p>de mai 2019 à février 2021</p>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" width="50" height="50"/>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="HTML" width="50" height="50"/>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS" width="50" height="50"/>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Javascript" width="50" height="50"/>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">C</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="HTML" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">HTML</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">CSS</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Javascript" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">Javascript</span>
+                        </a>
                     </div>
                 </article>
                 <article>

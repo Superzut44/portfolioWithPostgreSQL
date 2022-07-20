@@ -317,7 +317,7 @@ body{
         opacity: 1;
         display: initial;
         position: absolute;
-        top: 50%; left: 50%; /* à 50%/50% du parent référent */
+        top: 50%; left: 45%; /* à 50%/45% du parent référent */
         transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
         font-size: large;
     }
@@ -435,7 +435,34 @@ body{
     }
 }
 
+.aboutme_logo_image_span{
+    display: none;
+}
 
+.aboutme_logo_image{
+    margin-bottom: 0;
+    transition: width 2s, height 2s, margin-bottom 2s, transform 2s;
+}
+
+.aboutme_logo_image_a:hover{
+    position: relative;
+    margin: 0 5px;
+    .aboutme_logo_image{
+        opacity: 0.2;
+        width: 80px;
+        height: 80px;
+        transform: rotate(360deg);
+        margin-bottom: 0;
+    }
+    .aboutme_logo_image_span{
+        opacity: 1;
+        display: initial;
+        position: absolute;
+        top: 40%; left: 40%; /* à 40%/40% du parent référent */
+        transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+        font-size: large;
+    }
+}
     
 // about me end
 
