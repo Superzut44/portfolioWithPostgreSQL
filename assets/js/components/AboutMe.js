@@ -40,8 +40,33 @@ export default function AboutMe() {
                 <article>
                     <h2>Formations</h2>
                     <div>
+                        <h5>Langage Java</h5>
+                        <h6>Autodidacte avec les cours de la Wild Code School et d'OpenClassrooms</h6>
+                        <p>depuis juillet 2022 et en cours</p>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" alt="Java" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">Java</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://integraconsultores.es/wp-content/uploads/2018/07/Curso-de-Java-EE.png" alt="Java EE" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">Java EE</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://programadoresbrasil.com.br/wp-content/uploads/2021/04/python-ide-pydev.png" alt="Eclipse" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">Eclipse</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tomcat/tomcat-original-wordmark.svg" alt="Apache Tomcat" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">Apache Tomcat</span>
+                        </a>
+                        <a className="aboutme_logo_image_a">
+                            <img className="aboutme_logo_image" src="https://editorconfig.org/logos/maven.png" alt="Apache Maven" width="50" height="50"/>
+                            <span className="aboutme_logo_image_span">Apache Maven</span>
+                        </a>
+                    </div>
+                    <div>
                         <h5>Langage TypeScript et le framework Angular </h5>
-                        <h6>Autodidacte avec les cours offerts par la Wild Code School</h6>
+                        <h6>Autodidacte avec les cours de la Wild Code School et d'OpenClassrooms</h6>
                         <p>depuis mai 2022 et en cours</p>
                         <a className="aboutme_logo_image_a">
                             <img className="aboutme_logo_image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="50" height="50"/>
@@ -155,28 +180,40 @@ export default function AboutMe() {
                         <h5>Développeur web PHP/Symfony Javascript/React</h5>
                         <h6>Gaea21 à Lancy, Suisse</h6>
                         <h6>Depuis février 2022, en stage pour me perfectionner en PHP / Symfony sur des projets, et apprendre Javascript / ReactJS</h6>
-                        <p>Gaea 21 est une association à but non lucratif de droit suisse qui poursuit un but social idéal, à savoir la mise en œuvre du développement durable et de l’Agenda 21. C’est un vaste réseau de compétences et un groupe de réflexion qui introduit la dimension participative du public au cœur de son action. Gaea21, permet de créer des passerelles entre les entreprises privées, les collectivités publiques et la société civile. L’association se positionne essentiellement comme une interface et un facilitateur entre les différents acteurs du Développement Durable, sachant que l’association reste fondamentalement un acteur elle aussi.</p>
+                        <p>Gaea 21 est une association à but non lucratif de droit suisse qui poursuit un but social idéal, 
+                            à savoir la mise en œuvre du développement durable et de l’Agenda 21. C’est un vaste réseau de compétences 
+                            et un groupe de réflexion qui introduit la dimension participative du public au cœur de son action. Gaea21, 
+                            permet de créer des passerelles entre les entreprises privées, les collectivités publiques et la société civile. 
+                            L’association se positionne essentiellement comme une interface et un facilitateur entre les différents acteurs du Développement Durable, 
+                            sachant que l’association reste fondamentalement un acteur elle aussi.</p>
+
                         <h5>Développeur web PHP/Symfony</h5>
                         <h6>Wild Code School</h6>
                         <h6>Décembre 2021 à février 2022</h6>
+                        <p>La Wild Code School est une école innovante et un réseau européen de campus qui forment aux métiers tech des spécialistes 
+                            adaptables. C'est une marque de la société Innov'Educ. Après s'être historiquement développée sur le métier de 
+                            développeur web (PHP, Javascript, Java/Android), l'école propose aujourd'hui des formations autour de six grands domaines: 
+                            le développement informatique, la data, la cybersécurité, le product management, 
+                            l'UX/UI Design et le business développement 2.0. Elle forme essentiellement des adultes en reconversion professionnelle 
+                            sur des formats courts de trois à cinq mois.</p>
                         <ul>
                             <li>
-                                <a href="https://marcheconclu.chavaudreyxavier.fr" target="_blank">
+                                <a className="alinkProjects" href="https://marcheconclu.chavaudreyxavier.fr" target="_blank">
                                 Projet de création (du  1 décembre 2021 au 11 février 2022) d'un site Marché Conclu pour une cliente, en version mobile, réalisé en équipe à l'école Wild Code School de Reims.
                                 </a>
                             </li>
                             <li>
-                                <a href="https://fymi.chavaudreyxavier.fr" target="_blank">
+                                <a className="alinkProjects" href="https://fymi.chavaudreyxavier.fr" target="_blank">
                                 Hackaton sur le thème de la musique, réalisé en équipe et en version mobile (le 25 et 26 novembre 2021).
                                 </a>
                             </li>
                             <li>
-                                <a href="https://unlock.labetowiez.fr" target="_blank">
+                                <a className="alinkProjects" href="https://unlock.labetowiez.fr" target="_blank">
                                 Projet de création (du  21 oct au 13 nov 2021) d'un site fictif de type jeu : escape game ( Unlock! Sherlock adventures ), réalisé en équipe à l'école Wild Code School de Reims.
                                 </a>
                             </li>
                             <li>
-                                <a href="https://wildpost.chavaudreyxavier.fr/" target="_blank">
+                                <a className="alinkProjects" href="https://wildpost.chavaudreyxavier.fr/" target="_blank">
                                 Création en équipe (du  28 sept au 8 oct 2021) d'un site fictif de type journal sur l'école Wild Code School de Reims.
                                 </a>
                             </li>
