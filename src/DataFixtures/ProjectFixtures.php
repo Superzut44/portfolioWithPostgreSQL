@@ -20,7 +20,7 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'link' => 'https://marcheconclu.chavaudreyxavier.fr',
             'github' => 'https://github.com/Superzut44/marche-conclu',
             'languages' => ['HTML', 'CSS', 'PHP', 'Javascript'],
-            'tools' => ['Symfony', 'Sass', 'Bootstrap', 'MySQL', 'Composer', 'Git', 'Visual Studio Code', 'Linux'],
+            'tools' => ['Canva', 'Trello', 'Linux', 'Visual Studio Code', 'Git', 'Symfony', 'Composer', 'Twig', 'Doctrine', 'MySQL', 'Sass', 'Bootstrap'],
             'screenReference' => 'project_marcheconclu',
             'startThe' => '07-12-2021'
         ],
@@ -95,6 +95,17 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
             'tools' => ['Angular', 'Node.js','Firebase'],
             'screenReference' => 'project_angular-error-shelves',
             'startThe' => '03-06-2022'
+        ],
+        [
+            'name' => 'Portfolio',
+            'description' => "Présentation de mon profil et de mes projets réalisés (depuis le 9 février 2022).",
+            'image' => 'portfolio.png',
+            'link' => 'https://chavaudreyxavier.fr/',
+            'github' => 'https://github.com/Superzut44/portfolio',
+            'languages' => ['HTML', 'CSS', 'PHP', 'Javascript'],
+            'tools' => ['Canva', 'Trello', 'Linux', 'Visual Studio Code', 'Git', 'React', 'Symfony', 'Composer', 'Twig', 'Doctrine', 'MySQL', 'Sass', 'Bootstrap'],
+            'screenReference' => 'project_portfolio',
+            'startThe' => '09-03-2022'
         ],
     ];
 

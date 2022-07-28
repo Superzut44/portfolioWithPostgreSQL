@@ -121,6 +121,22 @@ class ToolFixtures extends Fixture
             'name' => 'Firebase',
             'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
         ],
+        [
+            'name' => 'Java EE',
+            'image' => 'https://integraconsultores.es/wp-content/uploads/2018/07/Curso-de-Java-EE.png',
+        ],
+        [
+            'name' => 'Eclipse',
+            'image' => 'https://programadoresbrasil.com.br/wp-content/uploads/2021/04/python-ide-pydev.png',
+        ],
+        [
+            'name' => 'Apache Tomcat',
+            'image' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tomcat/tomcat-original-wordmark.svg',
+        ],
+        [
+            'name' => 'Apache Maven',
+            'image' => 'https://editorconfig.org/logos/maven.png',
+        ],
     ];
 
     public function load(ObjectManager $manager): void
